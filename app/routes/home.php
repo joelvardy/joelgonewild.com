@@ -2,6 +2,6 @@
 
 Flight::route('GET /', function () {
 
-	echo 'Hello World!';
+	Flight::render('home');
 
 });
