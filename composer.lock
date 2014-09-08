@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d23aea85018d6e2ac03d9ee381111a3f",
+    "hash": "fae6c83613febac50b1c497e36a82a35",
     "packages": [
         {
             "name": "mikecao/flight",

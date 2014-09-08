@@ -1,7 +1,11 @@
 <?php
 
+use Travel\Blog;
+
 Flight::route('GET /', function () {
 
-	Flight::render('home');
+	Flight::render('home', [
+		'categories' => Blog::read()
+	]);
 
 });

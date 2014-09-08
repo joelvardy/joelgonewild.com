@@ -2,5 +2,10 @@
 	"require": {
 		"mikecao/flight": "dev-master"
 	},
+	"autoload": {
+		"psr-0": {
+			"Travel": "app/"
+		}
+	},
 	"minimum-stability": "dev"
 }
