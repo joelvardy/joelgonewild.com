@@ -1,0 +1,6 @@
+{
+	"require": {
+		"mikecao/flight": "dev-master"
+	},
+	"minimum-stability": "dev"
+}
