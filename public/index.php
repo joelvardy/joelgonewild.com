@@ -2,8 +2,8 @@
 
 require(dirname(__DIR__).'/init.php');
 
-Flight::route('GET /', function () {
-	echo 'Hello World!';
-});
+foreach (glob(ROUTES_PATH.'/*.php') as $route) {
+	require($route);
+}
 
 Flight::start();
