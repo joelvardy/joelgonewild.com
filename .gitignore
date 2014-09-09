@@ -14,3 +14,7 @@ Temporary Items
 
 # Composer
 /vendor
+
+# Build
+.sass-cache
+/node_modules

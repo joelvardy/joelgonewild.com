@@ -1,0 +1,3 @@
+*,*:after,*:before{box-sizing:inherit;margin:0;padding:0}a{color:#07f}html{background:#ebebeb;box-sizing:border-box;color:#222}html{font:100%/1.5em 'minion-pro', serif;font-style:normal;font-weight:400}strong{font-style:normal;font-weight:700}h1,h2,h3,h4,h5,h6{font-family:'ff-tisa-web-pro', serif;font-style:normal;font-weight:700;text-shadow:0 1px 0 white}body{margin:5% auto;width:70%}@media screen and (max-width: 800px){body{width:80%}}@media screen and (max-width: 600px){body{width:90%}}
+header{padding:1em}header>a{display:block;text-decoration:none}header>a img{display:block;height:3em;margin:0 auto}header>a h1{color:#222;font-size:2em;line-height:1em;text-align:center}
+/*# sourceMappingURL=design.css.map */

@@ -1,0 +1,61 @@
+*, *:after, *:before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+$textColour: #222;
+$primaryColour: #0077ff;
+
+a {
+	color: $primaryColour;
+}
+
+html {
+	background: #ebebeb;
+	box-sizing: border-box;
+	color: $textColour;
+}
+
+@import '_type';
+
+body {
+
+	margin: 5% auto;
+	width: 70%;
+
+	@media screen and (max-width: 800px) {
+		width: 80%;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 90%;
+	}
+
+}
+
+header {
+
+	padding: 1em;
+
+	> a {
+
+		display: block;
+		text-decoration: none;
+
+		img {
+			display: block;
+			height: 3em;
+			margin: 0 auto;
+		}
+
+		h1 {
+			color: $textColour;
+			font-size: 2em;
+			line-height: 1em;
+			text-align: center;
+		}
+
+	}
+
+}
