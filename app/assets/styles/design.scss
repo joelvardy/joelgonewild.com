@@ -17,6 +17,11 @@ html {
 	color: $textColour;
 }
 
+div.photo {
+	background: no-repeat center center;
+	background-size: cover;
+}
+
 @import '_type';
 
 body {
@@ -77,11 +82,18 @@ div.container {
 		article.post {
 
 			background: rgb(245, 245, 245);
+			border-radius: 3px;
 			margin-top: 5%;
+			overflow: hidden;
 			padding: 3em;
 
 			&:first-child {
 				margin-top: 0;
+			}
+
+			div.photo.hero {
+				height: 200px;
+				margin: -3em -3em 3em;
 			}
 
 		}

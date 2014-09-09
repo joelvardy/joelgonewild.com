@@ -23,7 +23,7 @@
 					<article class="post">
 
 						<?php if (isset($post->heroPhoto)) : ?>
-							<?php var_dump($post->heroPhoto); ?>
+							<div class="photo hero" style="background-image: url('/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>/1200');"></div>
 						<?php endif; ?>
 
 						<hgroup>
