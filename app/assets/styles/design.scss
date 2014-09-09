@@ -118,8 +118,38 @@ div.container {
 			width: 100%;
 		}
 
+		div.biography {
+
+			margin-bottom: 2em;
+
+			h4 {
+				margin-bottom: 0.5em;
+			}
+
+		}
+
 		ul.categories {
+
 			list-style: none;
+
+			li {
+
+				background: rgb(240, 240, 240);
+				border-bottom: 1px solid rgb(230, 230, 230);
+
+				&:last-child {
+					border-bottom: 0;
+				}
+
+				a {
+					display: block;
+					font-size: 1.1em;
+					padding: 0.75em 1em;
+					text-decoration: none;
+				}
+
+			}
+
 		}
 
 	}

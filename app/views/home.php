@@ -42,6 +42,14 @@
 
 			<aside>
 
+				<div class="biography">
+
+					<h4><a href="https://joelvardy.com/" title="Learn a little more about me">Joel Vardy</a></h4>
+
+					<p>I'm a <?php echo floor((time() - strtotime('10th Jan 1993')) / 31557600); ?> year old software engineer. Always having a camera around means the photos are sorted, but having never really blogged (diary style) before, this could be interesting.</p>
+
+				</div>
+
 				<ul class="categories">
 					<?php foreach ($categories as $category) : ?>
 						<li><a href="/category/<?php echo $category->slug; ?>" title="View posts from <?php echo $category->title; ?>"><?php echo $category->title; ?></a></li>
