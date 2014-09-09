@@ -12,7 +12,7 @@ a {
 }
 
 html {
-	background: #ebebeb;
+	background: rgb(235, 235, 235);
 	box-sizing: border-box;
 	color: $textColour;
 }
@@ -54,6 +54,52 @@ header {
 			font-size: 2em;
 			line-height: 1em;
 			text-align: center;
+		}
+
+	}
+
+}
+
+div.container {
+
+	margin-top: 5%;
+	overflow: hidden;
+
+	section.posts {
+
+		float: left;
+		width: 70%;	
+
+		@media screen and (max-width: 800px) {
+			width: 100%;
+		}
+
+		article.post {
+
+			background: rgb(245, 245, 245);
+			margin-top: 5%;
+			padding: 3em;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+		}
+
+	}
+
+	aside {
+
+		float: right;
+		width: 25%;
+
+		@media screen and (max-width: 800px) {
+			margin-top: 5%;
+			width: 100%;
+		}
+
+		ul.categories {
+			list-style: none;
 		}
 
 	}
