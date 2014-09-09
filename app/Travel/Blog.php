@@ -20,11 +20,19 @@ class Blog {
 
 		$categories = [];
 
-		foreach (glob(POSTS_PATH.'/*') as $category) {
+		foreach (glob(POSTS_PATH.'/*') as $category_path) {
 
 			$posts = [];
 
-			foreach (glob($category.'/*') as $post_directory) {
+			$category_details = json_decode(file_get_contents($category_path.'/category.json'));
+
+			$category = (object) [
+				'slug' => pathinfo($category_path)['filename'],
+				'title' => $category_details->title,
+				'description' => $category_details->description,
+			];
+
+			foreach (glob($category_path.'/*') as $post_directory) {
 
 				if ( ! is_dir($post_directory)) continue;
 
@@ -42,6 +50,7 @@ class Blog {
 
 				$posts[pathinfo($post_directory)['filename']] = (object) [
 					'slug' => pathinfo($post_directory)['filename'],
+					'category' => $category,
 					'title' => $post->title,
 					'written' => strtotime($post->written),
 					'photos' => $photos
@@ -49,14 +58,8 @@ class Blog {
 
 			}
 
-			$category_details = json_decode(file_get_contents($category.'/category.json'));
-
-			$categories[pathinfo($category)['filename']] = (object) [
-				'slug' => pathinfo($category)['filename'],
-				'title' => $category_details->title,
-				'description' => $category_details->description,
-				'posts' => $posts
-			];
+			$categories[$category->slug] = clone $category;
+			$categories[$category->slug]->posts = $posts;
 
 		}
 
