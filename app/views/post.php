@@ -9,7 +9,10 @@
 	<body>
 
 		<header>
-			<h1>Travel Blog</h1>
+			<a href="/" title="List of posts">
+				<img src="/assets/img/icon.svg" />
+				<h1>Travel Blog</h1>
+			</a>
 		</header>
 
 		<div class="container">

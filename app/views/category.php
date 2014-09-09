@@ -9,13 +9,19 @@
 	<body>
 
 		<header>
-			<h1>Travel Blog</h1>
+			<a href="/" title="List of posts">
+				<img src="/assets/img/icon.svg" />
+				<h1>Travel Blog</h1>
+			</a>
 		</header>
 
 		<div class="container">
 
 			<section class="category">
-				<?php var_dump($category); ?>
+
+				<h2><?php echo $category->title; ?></h2>
+				<p><?php echo $category->description; ?></p>
+
 			</section>
 
 			<section class="posts">
