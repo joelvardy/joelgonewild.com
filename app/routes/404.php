@@ -2,6 +2,6 @@
 
 Flight::map('notFound', function () {
 
-	echo 'Not found :(';
+	Flight::halt(404);
 
 });
