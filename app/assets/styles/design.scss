@@ -4,6 +4,9 @@
 	padding: 0;
 }
 
+/**
+ * TRIVIA: The primary colour is the opposite on the colour wheel to the orange I use on my personal website.
+ */
 $textColour: #222;
 $primaryColour: #0077ff;
 
@@ -105,6 +108,10 @@ div.container {
 				margin: -3em -3em 3em;
 			}
 
+			hgroup {
+				margin-bottom: 1em;
+			}
+
 		}
 
 	}
@@ -120,6 +127,25 @@ div.container {
 
 		h2 {
 			margin-bottom: 0.25em;
+		}
+
+	}
+
+	div.post {
+
+		background: rgb(245, 245, 245);
+		border: 1px solid rgb(230, 230, 230);
+		border-radius: 3px;
+		overflow: hidden;
+		padding: 3em;
+
+		div.photo.hero {
+			height: 200px;
+			margin: -3em -3em 3em;
+		}
+
+		hgroup {
+			margin-bottom: 1em;
 		}
 
 	}

@@ -17,7 +17,20 @@
 
 		<div class="container">
 
-			<?php var_dump($post); ?>
+			<div class="post">
+
+				<?php if (isset($post->heroPhoto)) : ?>
+					<div class="photo hero" style="background-image: url('/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>/1200');"></div>
+				<?php endif; ?>
+
+				<hgroup>
+					<h2><?php echo $post->title; ?></h2>
+					<h4><?php echo date('l jS F Y', $post->written); ?></h4>
+				</hgroup>
+
+				<?php echo $post->html; ?>
+
+			</div>
 
 		</div>
 

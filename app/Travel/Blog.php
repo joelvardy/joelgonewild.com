@@ -52,14 +52,15 @@ class Blog {
 
 				ob_start();
 				require($post_directory.'/post.php');
-				ob_get_clean();
+				$html = ob_get_clean();
 
 				$details = (object) [
 					'slug' => $post_slug,
 					'category' => $category,
 					'title' => $post->title,
 					'written' => strtotime($post->written),
-					'photos' => $photos
+					'photos' => $photos,
+					'html' => $html
 				];
 
 				if (isset($post->heroPhoto)) {
