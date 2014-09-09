@@ -48,13 +48,19 @@ class Blog {
 				require($post_directory.'/post.php');
 				ob_get_clean();
 
-				$posts[pathinfo($post_directory)['filename']] = (object) [
+				$details = (object) [
 					'slug' => pathinfo($post_directory)['filename'],
 					'category' => $category,
 					'title' => $post->title,
 					'written' => strtotime($post->written),
 					'photos' => $photos
 				];
+
+				if (isset($post->heroPhoto)) {
+					$details->heroPhoto = $post->heroPhoto;
+				}
+
+				$posts[pathinfo($post_directory)['filename']] = $details;
 
 			}
 
