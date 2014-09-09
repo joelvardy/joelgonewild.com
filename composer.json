@@ -1,6 +1,7 @@
 {
 	"require": {
-		"mikecao/flight": "dev-master"
+		"mikecao/flight": "dev-master",
+		"intervention/image": "dev-master"
 	},
 	"autoload": {
 		"psr-0": {

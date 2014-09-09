@@ -36,10 +36,16 @@ class Blog {
 
 				if ( ! is_dir($post_directory)) continue;
 
+				$post_slug = pathinfo($post_directory)['filename'];
+
 				$photos = [];
 
 				foreach (glob($post_directory.'/photos/*.jpg') as $photo) {
-					$photos[] = pathinfo($photo)['filename'];
+					$photo_slug = pathinfo($photo)['filename'];
+					$photos[$photo_slug] = (object) [
+						'slug' => $photo_slug,
+						'path' => $category->slug.'/'.$post_slug.'/photos/'.pathinfo($photo)['basename']
+					];
 				}
 
 				$post = (object) [];
@@ -49,7 +55,7 @@ class Blog {
 				ob_get_clean();
 
 				$details = (object) [
-					'slug' => pathinfo($post_directory)['filename'],
+					'slug' => $post_slug,
 					'category' => $category,
 					'title' => $post->title,
 					'written' => strtotime($post->written),
