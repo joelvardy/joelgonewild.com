@@ -7,15 +7,9 @@
 
 		<h1>Travel Blog</h1>
 
-		<?php foreach ($categories as $category) : ?>
+		<?php foreach ($posts as $post) : ?>
 
-			<h2><?php echo $category->title; ?></h2>
-
-			<?php foreach ($category->posts as $post) : ?>
-
-				<h3><?php echo $post->title; ?></h3>
-
-			<?php endforeach; ?>
+			<h2><?php echo $post->title; ?></h2>
 
 		<?php endforeach; ?>
 

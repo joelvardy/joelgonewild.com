@@ -12,11 +12,11 @@ class Blog {
 
 
 	/**
-	 * Read posts
+	 * Read categories and posts
 	 *
 	 * @return	array
 	 */
-	public static function read() {
+	public static function data() {
 
 		$categories = [];
 
@@ -61,6 +61,108 @@ class Blog {
 		}
 
 		return $categories;
+
+	}
+
+
+	/**
+	 * Read categories
+	 *
+	 * @return	array
+	 */
+	public static function categories() {
+
+		$data = self::data();
+
+		$categories = [];
+
+		foreach ($data as $category) {
+
+			$categories[] = (object) [
+				'slug' => $category->slug,
+				'title' => $category->title,
+				'description' => $category->description
+			];
+
+		}
+
+		return $categories;
+
+	}
+
+
+	/**
+	 * Read category
+	 *
+	 * @return	object | boolean
+	 */
+	public static function category($category_slug) {
+
+		$data = self::data();
+
+		foreach ($data as $category) {
+
+			if ($category->slug === $category_slug) return $category;
+
+		}
+
+		return false;
+
+	}
+
+
+	/**
+	 * Read posts
+	 *
+	 * @return	array
+	 */
+	public static function posts($category_slug = false) {
+
+		$data = self::data();
+
+		$posts = [];
+
+		foreach ($data as $category) {
+			foreach ($category->posts as $post) {
+
+				if ($category_slug && $category->slug !== $category_slug) continue;
+
+				$posts[] = $post;
+
+			}
+		}
+
+		// Order posts by written date
+		usort($posts, function ($a, $b) {
+			return $a->written - $b->written;
+		});
+		sort($posts);
+
+		return $posts;
+
+	}
+
+
+	/**
+	 * Read posts
+	 *
+	 * @return	object | boolean
+	 */
+	public static function post($category_slug, $post_slug) {
+
+		$data = self::data();
+
+		foreach ($data as $category) {
+			foreach ($category->posts as $post) {
+
+				if ($category->slug === $category_slug && $post->slug === $post_slug) {
+					return $post;
+				}
+
+			}
+		}
+
+		return false;
 
 	}
 

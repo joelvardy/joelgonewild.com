@@ -5,7 +5,7 @@ use Travel\Blog;
 Flight::route('GET /', function () {
 
 	Flight::render('home', [
-		'categories' => Blog::read()
+		'posts' => Blog::posts()
 	]);
 
 });
