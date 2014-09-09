@@ -9,10 +9,14 @@
 			<h1>Travel Blog</h1>
 		</header>
 
-		<div class="container sidebar">
+		<div class="container">
+
+			<section class="category">
+				<?php var_dump($category); ?>
+			</section>
 
 			<section class="posts">
-				<?php foreach ($posts as $post) : ?>
+				<?php foreach ($category->posts as $post) : ?>
 
 					<?php if (isset($post->heroPhoto)) : ?>
 						<?php var_dump($post->heroPhoto); ?>
@@ -29,16 +33,6 @@
 
 				<?php endforeach; ?>
 			</section>
-
-			<aside>
-
-				<ul class="categories">
-					<?php foreach ($categories as $category) : ?>
-						<li><a href="/category/<?php echo $category->slug; ?>" title="View posts from <?php echo $category->title; ?>"><?php echo $category->title; ?></a></li>
-					<?php endforeach; ?>
-				</ul>
-
-			</aside>
 
 		</div>
 
