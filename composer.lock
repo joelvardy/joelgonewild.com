@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eda5610fc01f01fe3903595b2549e84b",
+    "hash": "74ba998c3d7769f5ca5bd553f10305f5",
     "packages": [
         {
             "name": "intervention/image",
@@ -68,12 +68,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikecao/flight.git",
-                "reference": "64d384ddffc5bc23ca641d313214974b8b0a5788"
+                "reference": "3b576003faeb777346ba8beecd562913799cafd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikecao/flight/zipball/64d384ddffc5bc23ca641d313214974b8b0a5788",
-                "reference": "64d384ddffc5bc23ca641d313214974b8b0a5788",
+                "url": "https://api.github.com/repos/mikecao/flight/zipball/3b576003faeb777346ba8beecd562913799cafd6",
+                "reference": "3b576003faeb777346ba8beecd562913799cafd6",
                 "shasum": ""
             },
             "require": {
@@ -100,7 +100,50 @@
             ],
             "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications.",
             "homepage": "http://flightphp.com",
-            "time": "2014-09-08 05:26:02"
+            "time": "2014-09-09 16:03:47"
+        },
+        {
+            "name": "sunra/php-simple-html-dom-parser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
+                "reference": "89ee2ced64d54c3380cf955e7d370458773f119f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/89ee2ced64d54c3380cf955e7d370458773f119f",
+                "reference": "89ee2ced64d54c3380cf955e7d370458773f119f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sunra",
+                    "email": "sunra@yandex.ru",
+                    "homepage": "http://github.com/sunra"
+                }
+            ],
+            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
+            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
+            "keywords": [
+                "dom",
+                "html",
+                "parser"
+            ],
+            "time": "2014-07-08 18:25:34"
         }
     ],
     "packages-dev": [],
@@ -108,6 +151,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "mikecao/flight": 20,
+        "sunra/php-simple-html-dom-parser": 20,
         "intervention/image": 20
     },
     "prefer-stable": false,

@@ -39,7 +39,7 @@
 						</hgroup>
 
 						<div class="introduction">
-							<?php echo 'POST'; ?>
+							<?php echo $post->introduction; ?>
 						</div>
 
 					</article>

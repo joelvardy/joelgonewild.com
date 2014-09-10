@@ -113,6 +113,16 @@ div.container {
 				margin-bottom: 1em;
 			}
 
+			p {
+
+				margin-bottom: 1em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+			}
+
 		}
 
 	}
@@ -147,6 +157,16 @@ div.container {
 
 		hgroup {
 			margin-bottom: 1em;
+		}
+
+		p {
+
+			margin-bottom: 1em;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
 		}
 
 	}

@@ -1,6 +1,7 @@
 {
 	"require": {
 		"mikecao/flight": "dev-master",
+		"sunra/php-simple-html-dom-parser": "dev-master",
 		"intervention/image": "dev-master"
 	},
 	"autoload": {

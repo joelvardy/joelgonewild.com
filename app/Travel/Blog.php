@@ -8,6 +8,8 @@
 
 namespace Travel;
 
+use Sunra\PhpSimple\HtmlDomParser;
+
 class Blog {
 
 
@@ -54,11 +56,17 @@ class Blog {
 				require($post_directory.'/post.php');
 				$html = ob_get_clean();
 
+				$post_dom = HtmlDomParser::str_get_html($html);
+				$paragraph1 = (string) $post_dom->find('p', 0);
+				$paragraph2 = (string) $post_dom->find('p', 1);
+				$introduction = $paragraph1.$paragraph2;
+
 				$details = (object) [
 					'slug' => $post_slug,
 					'category' => $category,
 					'title' => $post->title,
 					'written' => strtotime($post->written),
+					'introduction' => $introduction,
 					'photos' => $photos,
 					'html' => $html
 				];
