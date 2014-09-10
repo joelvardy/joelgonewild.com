@@ -114,13 +114,11 @@ div.container {
 			}
 
 			p {
-
 				margin-bottom: 1em;
+			}
 
-				&:last-child {
-					margin-bottom: 0;
-				}
-
+			a.read-more {
+				text-decoration: none;
 			}
 
 		}

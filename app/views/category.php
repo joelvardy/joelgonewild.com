@@ -42,6 +42,8 @@
 							<?php echo $post->introduction; ?>
 						</div>
 
+						<a class="read-more" href="/<?php echo $post->category->slug; ?>/<?php echo $post->slug; ?>" title="<?php echo $post->category->title; ?> full post">Read more&hellip;</a>
+
 					</article>
 
 				<?php endforeach; ?>
