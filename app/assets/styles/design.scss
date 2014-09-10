@@ -157,12 +157,185 @@ div.container {
 			margin-bottom: 1em;
 		}
 
-		p {
+		p, div.gallery {
 
 			margin-bottom: 1em;
 
 			&:last-child {
 				margin-bottom: 0;
+			}
+
+		}
+
+		div.gallery {
+
+			overflow: hidden;
+
+			&:not(.loaded) {
+
+				background: rgb(230, 230, 230) url('../img/loading.svg') no-repeat center center;
+				background-size: 4em;
+				height: 6em;
+
+				* {
+					display: none;
+				}
+
+			}
+
+			a.photo {
+
+				display: block;
+
+				img {
+					display: block;
+					max-width: 100%;
+				}
+
+			}
+
+			&.images-1 {
+				a.photo {
+					width: 100%;
+				}
+			}
+
+			&.images-2, &.images-3, &.images-4, &.images-5, &.images-6 {
+				a.photo {
+
+					border: 1px solid rgb(220, 220, 220);
+					float: left;
+					margin-right: 5%;
+					padding: 0.5%;
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+				}
+			}
+
+			&.images-2 {
+				a.photo {
+					width: 47.5%;
+				}
+			}
+
+			&.images-3 {
+				a.photo {
+
+					width: 30%;
+
+					@media screen and (max-width: 800px) {
+
+						width: 47.5%;
+
+						&:nth-child(2) {
+							margin-right: 0;
+						}
+
+						&:last-child {
+							margin-top: 5%;
+							width: 100%;
+						}
+
+					}
+
+				}
+			}
+
+			&.images-4 {
+				a.photo {
+
+					width: 21.25%;
+
+					@media screen and (max-width: 800px) {
+
+						width: 47.5%;
+
+						&:nth-child(2) {
+							margin-right: 0;
+						}
+
+						&:nth-child(3), &:last-child {
+							margin-top: 5%;
+						}
+
+					}
+
+				}
+			}
+
+			&.images-5 {
+				a.photo {
+
+					width: 30%;
+
+					&:nth-child(3) {
+						margin-right: 0;
+					}
+
+					&:nth-child(4), &:last-child {
+						margin-top: 5%;
+					}
+
+					@media screen and (max-width: 800px) {
+
+						width: 47.5%;
+
+						&:nth-child(3) {
+							margin-right: 5%;
+						}
+
+						&:nth-child(2), &:nth-child(4) {
+							margin-right: 0;
+						}
+
+						&:nth-child(3), &:nth-child(3), &:last-child {
+							margin-top: 5%;
+						}
+
+						&:last-child {
+							width: 100%;
+						}
+
+					}
+
+				}
+			}
+
+			&.images-6 {
+				a.photo {
+
+					width: 30%;
+
+					&:nth-child(3), &:last-child {
+						margin-right: 0;
+					}
+
+					&:nth-child(4), &:nth-child(5), &:last-child {
+						margin-top: 5%;
+					}
+
+					@media screen and (max-width: 800px) {
+
+						width: 47.5%;
+
+						&:nth-child(3) {
+							margin-right: 5%;
+						}
+
+						&:nth-child(2), &:nth-child(4) {
+							margin-right: 0;
+						}
+
+						&:nth-child(3), &:nth-child(4), &:nth-child(5), &:last-child {
+							margin-top: 5%;
+						}
+
+					}
+
+				}
 			}
 
 		}
