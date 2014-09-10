@@ -7,7 +7,7 @@
 /**
  * TRIVIA: The primary colour is the opposite on the colour wheel to the orange I use on my personal website.
  */
-$textColour: #222;
+$textColour: rgb(30, 30, 30);
 $primaryColour: #0077ff;
 
 a {
@@ -119,9 +119,9 @@ div.container {
 
 	section.category {
 
-		background: rgb(25, 25, 25);
+		background: rgb(30, 30, 30);
 		border-radius: 3px;
-		color: #f5f5f5;
+		color: rgb(245, 245, 245);
 		margin-bottom: 5%;
 		overflow: hidden;
 		padding: 3em;
