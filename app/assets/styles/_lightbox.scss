@@ -1,0 +1,15 @@
+div.lightbox-container {
+	background: #111;
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+div.lightbox-photo {
+	background: no-repeat center center;
+	background-size: cover;
+	position: fixed;
+	transition: 0.25s;
+}

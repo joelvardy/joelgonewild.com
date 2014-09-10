@@ -8,6 +8,13 @@ $(function () {
 	}
 
 
+	$(document).keyup(function (event) {
+		if (event.keyCode == 27) {
+			$('body').lightbox('close');
+		}
+	});
+
+
 	$('div.photo.hero').each(function (index, heroPhotoElement) {
 
 		var imagePath = $(heroPhotoElement).data('path');
@@ -48,6 +55,11 @@ $(function () {
 
 				var photoElement = $('<a class="photo" href="'+imagePath+'/'+(screenSize === 'mobile' ? 1200 : 2400)+'"><img src="'+image.src+'" /></a>');
 				$(galleryElement).append(photoElement);
+
+				photoElement.click(function () {
+					$('body').lightbox('open', $(this).attr('href'));
+					return false;
+				});
 
 				if (imageCount === imagesLoaded) {
 					$(galleryElement).addClass('loaded');
