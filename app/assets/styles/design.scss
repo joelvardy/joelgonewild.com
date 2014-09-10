@@ -105,8 +105,15 @@ div.container {
 			}
 
 			div.photo.hero {
-				height: 200px;
+
+				height: 12em;
 				margin: -3em -3em 3em;
+
+				&:not(.loaded) {
+					background: rgb(230, 230, 230) url('../img/loading.svg') no-repeat center center;
+					background-size: 4em;
+				}
+
 			}
 
 			hgroup {
