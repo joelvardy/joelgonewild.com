@@ -6,12 +6,12 @@ use Travel\Photo;
 Flight::route('GET /@category/@post/@photo(/@size)', function ($category_slug, $post_slug, $photo_slug, $size) {
 
 	$category = Blog::category($category_slug);
-	if ( ! $category) return false;
+	if ( ! $category) Flight::halt(404);
 
 	$post = Blog::post($category_slug, $post_slug);
-	if ( ! $post) return false;
+	if ( ! $post) Flight::halt(404);
 
-	if ( ! isset($post->photos[$photo_slug])) return false;
+	if ( ! isset($post->photos[$photo_slug])) Flight::halt(404);
 
 	$size = (integer) ($size === null ? 800 : $size);
 
