@@ -1,10 +1,29 @@
 $(function () {
 
+
 	// Very simple, but better than nothing
 	var screenSize = 'mobile';
 	if ($(window).width() > 800) {
 		screenSize = 'desktop';
 	}
+
+
+	$('div.photo.hero').each(function (index, heroPhotoElement) {
+
+		var imagePath = $(heroPhotoElement).data('path');
+
+		// Load the image
+		var image = new Image();
+		image.addEventListener('load', function () {
+
+			$(heroPhotoElement).css('background-image', 'url('+image.src+')');
+			$(heroPhotoElement).addClass('loaded');
+
+		});
+		image.src = imagePath+'/'+(screenSize === 'mobile' ? 600 : 1200);
+
+	});
+
 
 	$('div.gallery').each(function (index, galleryElement) {
 
@@ -16,7 +35,7 @@ $(function () {
 		$('img', galleryElement).each(function (index, imageElement) {
 
 			var imageSlug = $(imageElement).data('slug'),
-				imagePath = window.location.pathname+'/'+imageSlug+'/';
+				imagePath = window.location.pathname+'/'+imageSlug;
 
 			// Rmeove placeholder image element
 			$(imageElement).remove();
@@ -27,9 +46,7 @@ $(function () {
 
 				imagesLoaded++;
 
-				console.log('Image loaded', image.width, image.height);
-
-				var photoElement = $('<a class="photo" href="'+imagePath+(screenSize === 'mobile' ? 1200 : 2400)+'"><img src="'+image.src+'" /></a>');
+				var photoElement = $('<a class="photo" href="'+imagePath+'/'+(screenSize === 'mobile' ? 1200 : 2400)+'"><img src="'+image.src+'" /></a>');
 				$(galleryElement).append(photoElement);
 
 				if (imageCount === imagesLoaded) {
@@ -37,10 +54,11 @@ $(function () {
 				}
 
 			});
-			image.src = imagePath+(screenSize === 'mobile' ? 600 : 1200);
+			image.src = imagePath+'/'+(screenSize === 'mobile' ? 600 : 1200);
 
 		});
 
 	});
+
 
 });

@@ -30,7 +30,7 @@
 					<article class="post">
 
 						<?php if (isset($post->heroPhoto)) : ?>
-							<div class="photo hero" style="background-image: url('/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>/1200');"></div>
+							<div class="photo hero" data-path="/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>"></div>
 						<?php endif; ?>
 
 						<hgroup>
