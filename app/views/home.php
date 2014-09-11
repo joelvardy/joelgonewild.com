@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Travel Blog | Joel Vardy</title>
 		<script src="//use.typekit.net/pel3gnp.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
