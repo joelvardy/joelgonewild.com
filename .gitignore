@@ -18,3 +18,6 @@ Temporary Items
 # Build
 .sass-cache
 /node_modules
+
+# Cache
+/cache/*
