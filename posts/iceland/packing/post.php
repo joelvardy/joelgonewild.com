@@ -8,7 +8,7 @@
 
 <p>The trip to Iceland has been discussed since October 2013, with myself being involved since February 2014.</p>
 
-<p>I was looking forward to packing well before we left for Iceland, but some last minute freelance work put stop to that. Here I am at 8pm, 6 hours before we leave, having just finished packing.</p>
+<p>I was looking forward to packing well before we left for Iceland, but some last minute freelance work put stop to that. Here I am at 8pm, six hours before we leave, having just finished packing.</p>
 
 <div class="gallery">
 
