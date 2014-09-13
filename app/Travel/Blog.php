@@ -75,9 +75,15 @@ class Blog {
 					$details->heroPhoto = $post->heroPhoto;
 				}
 
-				$posts[pathinfo($post_directory)['filename']] = $details;
+				$posts[] = $details;
 
 			}
+
+			// Order posts by written date
+			usort($posts, function ($a, $b) {
+				return $a->written - $b->written;
+			});
+			$posts = array_reverse($posts);
 
 			$categories[$category->slug] = clone $category;
 			$categories[$category->slug]->posts = $posts;
@@ -155,12 +161,6 @@ class Blog {
 
 			}
 		}
-
-		// Order posts by written date
-		usort($posts, function ($a, $b) {
-			return $a->written - $b->written;
-		});
-		sort($posts);
 
 		return $posts;
 
