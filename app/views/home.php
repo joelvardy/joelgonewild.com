@@ -24,7 +24,7 @@
 					<article class="post">
 
 						<?php if (isset($post->heroPhoto)) : ?>
-							<div class="photo hero" data-path="/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>"></div>
+							<a class="photo hero" href="/<?php echo $post->category->slug; ?>/<?php echo $post->slug; ?>" title="<?php echo $post->category->title; ?> full post" data-path="/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>"></a>
 						<?php endif; ?>
 
 						<hgroup>

@@ -20,7 +20,7 @@ html {
 	color: $textColour;
 }
 
-div.photo {
+.photo {
 	background: no-repeat center center;
 	background-size: cover;
 }
@@ -106,8 +106,9 @@ div.container {
 				margin-top: 0;
 			}
 
-			div.photo.hero {
+			a.photo.hero {
 
+				display: block;
 				height: 12em;
 				margin: -3em -3em 3em;
 

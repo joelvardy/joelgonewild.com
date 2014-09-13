@@ -15,7 +15,7 @@ $(function () {
 	});
 
 
-	$('div.photo.hero').each(function (index, heroPhotoElement) {
+	$('.photo.hero').each(function (index, heroPhotoElement) {
 
 		var imagePath = $(heroPhotoElement).data('path');
 
