@@ -12,7 +12,7 @@
 	<iframe src="//player.vimeo.com/video/106181390?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
-<p>We then had a walk around Reykjavik, took some photos of the Sun Voyager, and had lunch before heading back to the cabin, we need to be well rested for what's in store tomorrow...</p>
+<p>We then had a walk around Reykjavik, took some photos of the Sun Voyager, and had lunch before heading back to the cabin, we need to be well rested for what's in store tomorrow&hellip;</p>
 
 <div class="gallery">
 
