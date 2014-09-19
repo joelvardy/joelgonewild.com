@@ -6,7 +6,7 @@
 
 ?>
 
-<p>This morning we headed out to <strong>Strokkur Geyser</strong>, which is a high temperature geothermal area, there is a hole in the earth filled with water, when this water is superheated by the surrounding rock, water flashes to steam, forcing the rest of the water upwards into the air. At the Strokkur geyser this happens every eight to ten minutes.</p>
+<p>This morning we headed out to <strong>Strokkur Geyser</strong>, which is a high temperature geothermal area, where a cavity in the lithosphere has filled with water, when this water is superheated by the surrounding rock, water flashes to steam, forcing the rest of the water upwards into the air. At the Strokkur geyser this happens every eight to ten minutes.</p>
 
 <div class="gallery">
 
