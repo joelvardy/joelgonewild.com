@@ -20,7 +20,7 @@ class Photo {
 	 */
 	public static function resize($filepath, $size) {
 
-		$resized_filepath = CACHE_PATH.'/'.$size.'-'.md5($filepath);
+		$resized_filepath = CACHE_PATH.'/'.$size.'-'.md5_file(POSTS_PATH.'/'.$filepath);
 
 		if (file_exists($resized_filepath)) return $resized_filepath;
 
