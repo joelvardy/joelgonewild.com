@@ -10,7 +10,7 @@
 
 <h3>The Surprising</h3>
 
-<p>It's not been cold, yes it's only September, but I was expecting to see frost and negative figures when <a href="/iceland/busy-day-of-epicness" title="Glacier walk">on the glacier</a>, in reality it has been like the UK, in the teens most days.</p>
+<p>It's not been cold, yes it's only September, but I was expecting to see frost and negative figures when <a href="/iceland/busy-day-of-epicness" title="Falljokull glacier walk">on the glacier</a>, in reality it has been like the UK, in the teens most days.</p>
 
 <p>It's so relaxed, in the ten days we were in Iceland, we were only stuck in traffic twice; once in heavy fog, and once coming through Monday afternoon <em>rush hour</em>.</p>
 
