@@ -33,6 +33,6 @@
 
 <div class="gallery">
 
-	<img data-slug="aurora borealis" />
+	<img data-slug="aurora-borealis" />
 
 </div>
