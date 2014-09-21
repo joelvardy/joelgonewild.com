@@ -2,7 +2,7 @@
 
 	$post->title = 'Swimming';
 	$post->written = '19th September 2014';
-	$post->heroPhoto = 'hero';
+	$post->heroPhoto = 'mushrooms';
 
 ?>
 
@@ -12,4 +12,4 @@
 
 <p>Upon returning to the cabin we each ate a large, half-molten lump of vanilla ice cream, and while everyone else relaxed, I got frustrated as I was unable to top up the local pay-as-you sim card I had purchased earlier this week.</p>
 
-<p>After about an hour after we started, the rules of blackjack were half-written on a sheet of paper, and Jenny was already taking penalties for constantly flouting the rules, we all had some nice Icelandic beers, and helped Tanya complete her Ice Bucket Challenge before jumping in the hot tub.</p>
+<p>After about an hour after we started, the rules of blackjack were half-written on a sheet of paper, Jenny was already taking penalties for constantly flouting the rules, we all had some nice Icelandic beers, and helped Tanya complete her Ice Bucket Challenge before jumping in the hot tub.</p>

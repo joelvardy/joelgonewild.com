@@ -2,7 +2,7 @@
 
 	$post->title = 'Packing';
 	$post->written = '11th September 2014';
-	$post->heroPhoto = 'hero';
+	$post->heroPhoto = 'camera-equipment';
 
 ?>
 
@@ -16,7 +16,7 @@
 
 </div>
 
-<p>If you know me, you won't be surprise by the amount of photography, and computer equipment. As usual boxers and socks take up a surprising amount of space. Below is the full list:</p>
+<p>If you know me, you won't be surprised by the amount of photography, and computer equipment. As usual boxers and socks take up a surprising amount of space. Below is my full kit list:</p>
 
 <ul>
 	<li>Canon 5D mk2 + 50mm + 70mm - 200mm + 17mm to 40mm</li>

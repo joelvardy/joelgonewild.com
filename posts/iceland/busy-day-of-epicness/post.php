@@ -2,16 +2,16 @@
 
 	$post->title = 'Busy day of Epicness';
 	$post->written = '16th September 2014';
-	$post->heroPhoto = 'group';
+	$post->heroPhoto = 'falljokull-glacier-group';
 
 ?>
 
-<p>It's been a very long day, we left our cabin at 04:30 yesterday heading to Skaftafell National Park where we took part in a guided glacier walk, our guide, Dan, was a very charismatic guy, who after allowing us to get used to walking in crampons, took us up part of the glacier. After two hours we headed back to the base camp, squeezing in a small abseil down part of the icepack.</p>
+<p>It's been a very long day, we left our cabin at 04:30 heading to Skaftafell National Park where we took part in a guided glacier walk, on the Falljokull glacier, our guide, Dan, was a very charismatic guy, who after allowing us to get used to walking in crampons took us up part of the glacier. After two hours we headed back to the base camp, squeezing in a small abseil down part of the icepack.</p>
 
 <div class="gallery">
 
-	<img data-slug="glacier-walking" />
-	<img data-slug="glacier-ice" />
+	<img data-slug="falljokull-glacier-walking" />
+	<img data-slug="falljokull-glacier-ice" />
 
 </div>
 
@@ -39,4 +39,4 @@
 
 </div>
 
-<p>A very action packed day, and Tanya's birthday, tomorrow it's time to relax!</p>
+<p>A very action packed day, and Tanya's birthday. Tomorrow it's time to relax!</p>

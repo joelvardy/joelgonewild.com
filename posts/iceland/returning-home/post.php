@@ -10,11 +10,11 @@
 
 <h3>The Surprising</h3>
 
-<p>It's not been cold, yes it's only September, but I was expecting to see frost and negative figures when <a href="/iceland/busy-day-of-epicness" title="Glacier walk">on the glacier</a>, but in reality it has been like the UK, in the teens most days.</p>
+<p>It's not been cold, yes it's only September, but I was expecting to see frost and negative figures when <a href="/iceland/busy-day-of-epicness" title="Glacier walk">on the glacier</a>, in reality it has been like the UK, in the teens most days.</p>
 
-<p>It's so relaxed, in the ten days we were in Iceland, we were only stuck in traffic twice; once in heavy fog, and once coming through Monday afternoon <em>rush hour</em> - if you can even call it rush hour.</p>
+<p>It's so relaxed, in the ten days we were in Iceland, we were only stuck in traffic twice; once in heavy fog, and once coming through Monday afternoon <em>rush hour</em>.</p>
 
-<p>It's not actually too embarrassing using a GoPro 'selfie pole' when you know you'll never see the people around you again, and you can get some unique shots.</p>
+<p>It's not actually too embarrassing using a GoPro <em>selfie pole</em> when you know you'll never see the people around you again.</p>
 
 <div class="gallery">
 
@@ -26,7 +26,7 @@
 
 <p>I called the first blog post <a href="/iceland/mundane" title="Not a mundane evening">mundane</a>, however I now regret that, as it was the only night we saw the aurora borealis, and that was certainly not mundane.</p>
 
-<p>Having reviewed the photos, learning how to set up the camera, and progressing my post processing skills over the week. I was really looking forward to capturing the aurora borealis. Alas, I'm planning a trip to Finland in early 2016 and I should be able to get some amazing photos then.</p>
+<p>Having reviewed the photos, learning how to set up the camera, and progressing my post processing skills over the week. I was really looking forward to capturing more photos of the aurora borealis. Alas, I'm planning a trip to Finland in early 2016 and I should be able to get some amazing photos then.</p>
 
 <div class="gallery">
 
@@ -35,6 +35,8 @@
 </div>
 
 <p>Unfortunately we rented a Ford Focus, and while it was a lovely modern car, having a 4x4 would be opened more opportunities for exploration.</p>
+
+<p>It was really easy to buy a local Simmin sim card for my phone, however I did get annoyed when I tried to top it up and both my credit card and debit card were declined, I dread to think how much Three are going to charge me for data this month.</p>
 
 <h3>The Awesome</h3>
 

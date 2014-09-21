@@ -2,7 +2,7 @@
 
 	$post->title = 'Dog Sledding';
 	$post->written = '20th September 2014';
-	$post->heroPhoto = 'hero';
+	$post->heroPhoto = 'dog';
 
 ?>
 
@@ -24,4 +24,4 @@
 
 </div>
 
-<p>All day we were teased by clear skys and sunny weather, however despite very little cloud, by eleven pm I was getting doubtful that I would be able to take any further photos of the northern lights. And by midnight I decided to bring the stuff back inside to warm up, ready to pack it back in the camera bag.</p>
+<p>All day we were teased by clear skys and sunny weather, however despite very little cloud, by eleven pm I was getting doubtful that I would be able to take any further photos of the aurora borealis. And by midnight I decided to bring the stuff back inside to warm up, ready to pack it back in the camera bag.</p>

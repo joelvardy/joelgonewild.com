@@ -12,13 +12,13 @@
 
 <div class="gallery">
 
-	<img data-slug="water" />
+	<img data-slug="deep-water" />
 	<img data-slug="joel" />
 	<img data-slug="reflection" />
 
 </div>
 
-<p>The beautiful area of water shown below is where Women were drowned after being convicted of either incest or prostitution, depending on what account you read.</p>
+<p>The beautiful area of water shown below is where women were drowned after being convicted of either incest or prostitution, depending on what account you read.</p>
 
 <div class="gallery">
 
