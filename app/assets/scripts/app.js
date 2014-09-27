@@ -27,7 +27,7 @@ $(function () {
 			$(heroPhotoElement).addClass('loaded');
 
 		});
-		image.src = imagePath+'/'+(screenSize === 'mobile' ? 600 : 1200);
+		image.src = imagePath+'/'+(screenSize === 'mobile' ? 600 : 1200)+'.jpg';
 
 	});
 
@@ -53,7 +53,7 @@ $(function () {
 
 				imagesLoaded++;
 
-				var photoElement = $('<a class="photo" href="'+imagePath+'/'+(screenSize === 'mobile' ? 1200 : 2400)+'"><img src="'+image.src+'" /></a>');
+				var photoElement = $('<a class="photo" href="'+imagePath+'/'+(screenSize === 'mobile' ? 1200 : 2400)+'.jpg"><img src="'+image.src+'" /></a>');
 				$(galleryElement).append(photoElement);
 
 				photoElement.click(function () {
@@ -66,7 +66,7 @@ $(function () {
 				}
 
 			});
-			image.src = imagePath+'/'+(screenSize === 'mobile' ? 600 : 1200);
+			image.src = imagePath+'/'+(screenSize === 'mobile' ? 600 : 1200)+'.jpg';
 
 		});
 

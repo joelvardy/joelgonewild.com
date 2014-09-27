@@ -3,7 +3,7 @@
 use Travel\Blog;
 use Travel\Photo;
 
-Flight::route('GET /@category/@post/@photo(/@size)', function ($category_slug, $post_slug, $photo_slug, $size) {
+Flight::route('GET /@category/@post/@photo(/@size)(.jpg)', function ($category_slug, $post_slug, $photo_slug, $size) {
 
 	$category = Blog::category($category_slug);
 	if ( ! $category) Flight::halt(404);
