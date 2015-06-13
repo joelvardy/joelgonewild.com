@@ -32,6 +32,7 @@ class Blog {
 				'slug' => pathinfo($category_path)['filename'],
 				'title' => $category_details->title,
 				'description' => $category_details->description,
+				'date' => strtotime($category_details->date),
 			];
 
 			foreach (glob($category_path.'/*') as $post_directory) {
@@ -90,7 +91,12 @@ class Blog {
 
 		}
 
-		return $categories;
+        // Order $categories by date
+        usort($categories, function ($a, $b) {
+            return $a->date - $b->date;
+        });
+
+        return array_reverse($categories);
 
 	}
 
