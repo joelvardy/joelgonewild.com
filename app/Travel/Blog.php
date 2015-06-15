@@ -22,6 +22,7 @@ class Blog {
 
 		$categories = [];
 
+        // Iterate through each category
 		foreach (glob(POSTS_PATH.'/*') as $category_path) {
 
 			$posts = [];
@@ -35,6 +36,7 @@ class Blog {
 				'date' => strtotime($category_details->date),
 			];
 
+            // Iterate through each post in the category
 			foreach (glob($category_path.'/*') as $post_directory) {
 
 				if ( ! is_dir($post_directory)) continue;
@@ -43,6 +45,7 @@ class Blog {
 
 				$photos = [];
 
+                // Iterate through each photo in the post
 				foreach (glob($post_directory.'/photos/*.jpg') as $photo) {
 					$photo_slug = pathinfo($photo)['filename'];
 					$photos[$photo_slug] = (object) [
@@ -82,9 +85,8 @@ class Blog {
 
 			// Order posts by written date
 			usort($posts, function ($a, $b) {
-				return $a->written - $b->written;
+				return $b->written - $a->written;
 			});
-			$posts = array_reverse($posts);
 
 			$categories[$category->slug] = clone $category;
 			$categories[$category->slug]->posts = $posts;
@@ -93,10 +95,10 @@ class Blog {
 
         // Order $categories by date
         usort($categories, function ($a, $b) {
-            return $a->date - $b->date;
+            return $b->date - $a->date;
         });
 
-        return array_reverse($categories);
+        return $categories;
 
 	}
 
@@ -128,7 +130,7 @@ class Blog {
 
 
 	/**
-	 * Read category
+	 * Read single category
 	 *
 	 * @return	object | boolean
 	 */
@@ -174,7 +176,7 @@ class Blog {
 
 
 	/**
-	 * Read posts
+	 * Read single post
 	 *
 	 * @return	object | boolean
 	 */
