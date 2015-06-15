@@ -173,6 +173,10 @@ div.container {
 			height: 12em;
 			margin: -3em -3em 3em;
 
+            &.hero-post {
+                cursor: pointer;
+            }
+
 			&:not(.loaded) {
                 @extend .loading-background;
 				background-size: 4em;

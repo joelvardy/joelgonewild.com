@@ -28,10 +28,13 @@ $(function () {
 			$(heroPhotoElement).css('background-image', 'url('+image.src+')');
 			$(heroPhotoElement).addClass('loaded');
 
-            $(heroPhotoElement).click(function () {
-                $('body').lightbox('open', image.src);
-                return false;
-            });
+            // If the hero image is at the top of a post allow it to be opened in a lightbox
+            if ($(heroPhotoElement).hasClass('hero-post')) {
+                $(heroPhotoElement).click(function () {
+                    $('body').lightbox('open', image.src);
+                    return false;
+                });
+            }
 
 		});
 		image.src = imagePath+'/'+(screenSize === 'mobile' ? 600 : 1200)+'.jpg';

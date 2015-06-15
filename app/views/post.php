@@ -21,7 +21,7 @@
 			<div class="post">
 
 				<?php if (isset($post->heroPhoto)) : ?>
-					<div class="photo hero" data-path="/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>"></div>
+					<div class="photo hero hero-post" data-path="/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>"></div>
 				<?php endif; ?>
 
 				<hgroup>
