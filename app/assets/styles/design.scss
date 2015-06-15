@@ -44,6 +44,10 @@ body {
 
 @import '_lightbox';
 
+.loading-background {
+    background: rgb(230, 230, 230) url('../img/loading.svg') no-repeat center center;
+}
+
 header {
 
 	padding: 1em;
@@ -113,7 +117,7 @@ div.container {
 				margin: -3em -3em 3em;
 
 				&:not(.loaded) {
-					background: rgb(230, 230, 230) url('../img/loading.svg') no-repeat center center;
+					@extend .loading-background;
 					background-size: 4em;
 				}
 
@@ -170,7 +174,7 @@ div.container {
 			margin: -3em -3em 3em;
 
 			&:not(.loaded) {
-				background: rgb(230, 230, 230) url('../img/loading.svg') no-repeat center center;
+                @extend .loading-background;
 				background-size: 4em;
 			}
 
@@ -200,7 +204,7 @@ div.container {
 
 			&:not(.loaded) {
 
-				background: rgb(230, 230, 230) url('../img/loading.svg') no-repeat center center;
+                @extend .loading-background;
 				background-size: 4em;
 				height: 6em;
 
