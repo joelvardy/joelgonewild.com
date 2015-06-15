@@ -28,6 +28,11 @@ $(function () {
 			$(heroPhotoElement).css('background-image', 'url('+image.src+')');
 			$(heroPhotoElement).addClass('loaded');
 
+            $(heroPhotoElement).click(function () {
+                $('body').lightbox('open', image.src);
+                return false;
+            });
+
 		});
 		image.src = imagePath+'/'+(screenSize === 'mobile' ? 600 : 1200)+'.jpg';
 
