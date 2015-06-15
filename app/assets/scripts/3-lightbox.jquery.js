@@ -9,9 +9,9 @@
 
 		var _this = this;
 
-		$(window).resize(function () {
-			_this.resize();
-		});
+		$(window).resize($.throttle(50, function () {
+            _this.resize();
+        }));
 
 	}
 
@@ -21,10 +21,10 @@
 
 			var _this = this;
 
-			var containerElement = $('<div class="lightbox-container">');
+			var lightboxContainerElement = $('<div class="lightbox-container">');
 			this.photoElement = $('<div class="lightbox-photo">');
 
-			this.containerElement = containerElement.append(this.photoElement);
+			this.containerElement = lightboxContainerElement.append(this.photoElement);
 			$('body').append(this.containerElement);
 
 			this.containerElement.click(function (event) {

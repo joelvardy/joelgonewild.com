@@ -8,6 +8,7 @@ $(function () {
 	}
 
 
+    // Close lightbox on escape key
 	$(document).keyup(function (event) {
 		if (event.keyCode == 27) {
 			$('body').lightbox('close');
@@ -15,6 +16,7 @@ $(function () {
 	});
 
 
+    // Load hero image (responsive)
 	$('.photo.hero').each(function (index, heroPhotoElement) {
 
 		var imagePath = $(heroPhotoElement).data('path');
@@ -32,6 +34,7 @@ $(function () {
 	});
 
 
+    // Load gallery images (responsive)
 	$('div.gallery').each(function (index, galleryElement) {
 
 		var imageCount = $('img', galleryElement).length,
@@ -39,6 +42,7 @@ $(function () {
 
 		$(galleryElement).addClass('images-'+imageCount);
 
+        // Iterate through each image
 		$('img', galleryElement).each(function (index, imageElement) {
 
 			var imageSlug = $(imageElement).data('slug'),
@@ -48,6 +52,7 @@ $(function () {
 			$(imageElement).remove();
 
 			// Load the image
+            // NOTE: This will not preserve the order of images in the gallery
 			var image = new Image();
 			image.addEventListener('load', function () {
 
