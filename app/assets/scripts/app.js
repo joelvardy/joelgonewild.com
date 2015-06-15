@@ -53,7 +53,7 @@ $(function () {
 			var imageSlug = $(imageElement).data('slug'),
 				imagePath = window.location.pathname+'/'+imageSlug;
 
-			// Rmeove placeholder image element
+			// Remove placeholder image element
 			$(imageElement).remove();
 
 			// Load the image
@@ -70,6 +70,8 @@ $(function () {
 					$('body').lightbox('open', $(this).attr('href'));
 					return false;
 				});
+
+                // TODO: Allow each gallery to be navigated from lightbox
 
 				if (imageCount === imagesLoaded) {
 					$(galleryElement).addClass('loaded');
