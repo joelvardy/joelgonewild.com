@@ -22,7 +22,7 @@
 			var _this = this;
 
 			var lightboxContainerElement = $('<div class="lightbox-container">');
-			this.photoElement = $('<div class="lightbox-photo">');
+			this.photoElement = $('<img class="lightbox-photo">');
 
 			this.containerElement = lightboxContainerElement.append(this.photoElement);
 			$('body').append(this.containerElement);
@@ -46,26 +46,24 @@
 			if (this.photoElement.length < 1) return;
 
 			var photoData = this.photoElement.data(),
-				spacing = 10;
+				spacing = 16;
 
 			var windowAspect = ($(window).width() - (spacing * 2)) / ($(window).height() - (spacing * 2)),
-				photoAspect = (photoData.width / photoData.height);
+				photoAspect = (parseInt(photoData.width) / parseInt(photoData.height));
 
-			var photoWidth, photoHeight;
 			if (windowAspect > photoAspect) {
-				photoHeight = ($(window).height() - (spacing * 2));
-				photoWidth = Math.floor(photoHeight * photoAspect);
+                this.photoElement.css({
+                    height: ($(window).height() - (spacing * 2))+'px',
+                    left: Math.floor(($(window).width() - Math.floor(($(window).height() - (spacing * 2)) * photoAspect)) / 2)+'px',
+                    top: Math.floor(($(window).height() - ($(window).height() - (spacing * 2))) / 2)+'px'
+                });
 			} else {
-				photoWidth = ($(window).width() - (spacing * 2));
-				photoHeight = Math.floor(photoWidth / photoAspect);
+                this.photoElement.css({
+                    width: ($(window).width() - (spacing * 2))+'px',
+                    left: Math.floor(($(window).width() - ($(window).width() - (spacing * 2))) / 2)+'px',
+                    top: Math.floor(($(window).height() - Math.floor(($(window).width() - (spacing * 2)) / photoAspect)) / 2)+'px'
+                });
 			}
-
-			this.photoElement.css({
-				height: photoHeight+'px',
-				left: Math.floor(($(window).width() - photoWidth) / 2)+'px',
-				width: photoWidth+'px',
-				top: Math.floor(($(window).height() - photoHeight) / 2)+'px'
-			});
 
 		},
 
@@ -80,7 +78,7 @@
 				_this.photoElement.data('width', image.width);
 				_this.photoElement.data('height', image.height);
 
-				_this.photoElement.css('background-image', 'url('+image.src+')');
+				_this.photoElement.attr('src', image.src);
 
 				_this.resize();
 

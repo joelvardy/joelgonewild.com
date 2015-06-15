@@ -8,9 +8,7 @@ div.lightbox-container {
 	right: 0;
 	top: 0;
 }
-div.lightbox-photo {
-	background: no-repeat center center;
-	background-size: cover;
+img.lightbox-photo {
 	position: fixed;
 	transition: 0.25s;
 }
