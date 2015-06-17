@@ -409,11 +409,18 @@ div.container {
 
 		div.biography {
 
-			margin-bottom: 2em;
+            margin-bottom: 2em;
 
-			h4 {
-				margin-bottom: 0.5em;
-			}
+            img {
+                border-radius: 60%;
+                display: block;
+                margin: 0 auto 1em;
+                width: 60%;
+            }
+
+            p {
+                text-align: center;
+            }
 
 		}
 

@@ -47,9 +47,9 @@
 
 				<div class="biography">
 
-					<h4><a href="https://joelvardy.com/" title="Learn a little more about me">Joel Vardy</a></h4>
+                    <a href="https://joelvardy.com/" title="Learn a little more about me"><img src="/assets/img/joel-vardy.jpg"></a>
 
-					<p>I'm a <?php echo floor((time() - strtotime('10th Jan 1993')) / 31557600); ?> year old software engineer. Always having a camera around means the photos are sorted, but having never really blogged (diary style) before, this could be interesting.</p>
+					<p>I'm Joel Vardy, a <?php echo floor((time() - strtotime('10th Jan 1993')) / 31557600); ?> year old web developer. I've never really blogged (diary style) before, but I'm trying to document some of my trips for the future.</p>
 
 				</div>
 
