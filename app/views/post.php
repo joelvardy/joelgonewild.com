@@ -5,7 +5,7 @@
 		<title><?php echo $post->title; ?> | Travel Blog | Joel Vardy</title>
 		<script src="//use.typekit.net/pel3gnp.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-		<link rel="stylesheet" href="/assets/css/design.css" />
+		<link rel="stylesheet" href="/assets/css/design.css">
 	</head>
 	<body>
 
