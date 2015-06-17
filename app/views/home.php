@@ -6,11 +6,11 @@
         <meta name="description" content="My personal musings when traveling around.">
         <meta property="og:title" content="Traveling with Joel">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="/assets/img/joel-vardy.jpg">
+        <meta property="og:image" content="https://joelgonewild.com/assets/img/joel-vardy.jpg">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="Traveling with Joel">
         <meta name="twitter:creator" content="@joelvardy">
-        <meta name="twitter:image" content="/assets/img/joel-vardy.jpg">
+        <meta name="twitter:image" content="https://joelgonewild.com/assets/img/joel-vardy.jpg">
         <script src="//use.typekit.net/pel3gnp.js"></script>
         <script>
             try {

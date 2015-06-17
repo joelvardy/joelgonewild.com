@@ -6,11 +6,11 @@
         <meta name="description" content="<?php echo $post->description; ?>">
         <meta property="og:title" content="<?php echo $post->title; ?> with Joel">
         <meta property="og:type" content="article">
-        <meta property="og:image" content="/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>/600.jpg">
+        <meta property="og:image" content="https://joelgonewild.com/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>/600.jpg">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="<?php echo $post->title; ?> with Joel">
         <meta name="twitter:creator" content="@joelvardy">
-        <meta name="twitter:image" content="/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>/600.jpg">
+        <meta name="twitter:image" content="https://joelgonewild.com/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>/600.jpg">
         <script src="//use.typekit.net/pel3gnp.js"></script>
         <script>
             try {
