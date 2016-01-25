@@ -9,5 +9,8 @@
 			"Travel": "app/"
 		}
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
+	"require-dev": {
+		"laravel/homestead": "^3.0"
+	}
 }

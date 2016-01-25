@@ -4,7 +4,13 @@ This is a blog initially built to be ready for my 2014 Icelandic trip, however, 
 
 ## Development
 
+I'm using per-project Homestead configuration, to develop locally you should use the commands below:
+
 ```
+composer install
+npm install
+vagrant up
+echo 192.168.10.13 joelgonewild.dev | sudo tee -a /etc/hosts
 gulp watch
 ```
 

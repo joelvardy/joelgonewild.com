@@ -12,12 +12,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Vagrant
+/.vagrant/
+
 # Composer
-/vendor
+/vendor/
 
 # Build
 .sass-cache
-/node_modules
+/node_modules/
 
 # Cache
 /cache/*
