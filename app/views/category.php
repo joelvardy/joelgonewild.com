@@ -11,6 +11,7 @@
         <meta name="twitter:title" content="<?php echo $category->title; ?> with Joel">
         <meta name="twitter:creator" content="@joelvardy">
         <meta name="twitter:image" content="https://joelgonewild.com/assets/img/joel-vardy.jpg">
+        <link rel="stylesheet" href="/assets/css/design.css">
         <script src="//use.typekit.net/pel3gnp.js"></script>
         <script>
             try {
@@ -25,7 +26,6 @@
             ga('create', 'UA-65769078-1', 'auto');
             ga('send', 'pageview');
         </script>
-        <link rel="stylesheet" href="/assets/css/design.css">
     </head>
     <body>
 
