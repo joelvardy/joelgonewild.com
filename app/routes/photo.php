@@ -26,6 +26,7 @@ Flight::route('GET /@category/@post/@photo(/@size)(.jpg)', function ($category_s
 		Flight::etag(md5_file($resized_photo));
 
 		header('Content-Type: image/jpeg');
+        header('Expires: '.gmdate('D, d M Y H:i:s \G\M\T', time() + (60 * 60 * 24 * 7))); // 7 Days
 		readfile($resized_photo);
 
 	} catch (Exception $e) {
