@@ -70,7 +70,7 @@ class Blog {
 					'category' => $category,
 					'title' => $post->title,
 					'written' => strtotime($post->written),
-					'description' => $post_dom->find('p', 0)->innertext,
+					'description' => strip_tags($post_dom->find('p', 0)->innertext),
 					'introduction' => $introduction,
 					'photos' => $photos,
 					'html' => $html
