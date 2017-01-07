@@ -11,6 +11,6 @@
 	},
 	"minimum-stability": "dev",
 	"require-dev": {
-		"laravel/homestead": "^3.0"
+		"laravel/homestead": "^4.0"
 	}
 }
