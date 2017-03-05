@@ -12,20 +12,16 @@ $post->heroPhoto = 'taking-aim';
 
 <p>Just as we finished up shorting we saw a group of ~20 police training on a range, speaking to the instructor we were told all police in the Czech Republic carry a sidearm, and they must practice several times each year.</p>
 
-<div class="gallery">
-
-    <img data-slug="dragunov-joel" />
-    <img data-slug="marking" />
-    <img data-slug="dragunov-ed" />
-
-</div>
+<gallery>
+    <gallery-photo path="dragunov-joel"></gallery-photo>
+    <gallery-photo path="marking"></gallery-photo>
+    <gallery-photo path="dragunov-ed"></gallery-photo>
+</gallery>
 
 <p>We went to find the Vyšehrad casemates, and three hours and after having visited the police museum we did manage to find them. The casemates are tunnels which were used to secretly transport troops, and store munitions within the armaments.</p>
 
 <p>Having reserved a table at Pagana, we arrived promptly and within two minutes had both eaten a snail for the first time. I'd describe it as a chewy mushroom.</p>
 
-<div class="gallery">
-
-    <img data-slug="dinner" />
-
-</div>
+<gallery>
+    <gallery-photo path="dinner"></gallery-photo>
+</gallery>

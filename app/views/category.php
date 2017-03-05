@@ -1,78 +1,33 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title><?php echo $category->title; ?> | Travel Blog | Joel Vardy</title>
-        <meta name="description" content="<?php echo $category->description; ?>">
-        <meta property="og:title" content="<?php echo $category->title; ?> with Joel">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://joelgonewild.com/assets/img/joel-vardy.jpg">
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="<?php echo $category->title; ?> with Joel">
-        <meta name="twitter:creator" content="@joelvardy">
-        <meta name="twitter:image" content="https://joelgonewild.com/assets/img/joel-vardy.jpg">
-        <link rel="stylesheet" href="/assets/css/design.css">
-        <script src="//use.typekit.net/pel3gnp.js"></script>
-        <script>
-            try {
-                Typekit.load();
-            } catch (e) {}
-        </script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-65769078-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
+<div class="container">
 
-        <header>
-            <a href="/" title="List of posts">
-                <img src="/assets/img/icon.svg">
-                <h1>Travel Blog</h1>
-            </a>
-        </header>
+    <section class="category">
+        <h2><?php echo $category->title; ?></h2>
+        <p><?php echo $category->description; ?></p>
+    </section>
 
-        <div class="container">
+    <section class="posts">
+        <?php foreach ($category->posts as $post) : ?>
 
-            <section class="category">
+            <article class="post">
 
-                <h2><?php echo $category->title; ?></h2>
+                <?php if (isset($post->heroPhoto)) : ?>
+                    <hero-photo path="/<?php echo $post->category->slug . '/' . $post->slug . '/' . $post->heroPhoto; ?>" link="/<?php echo $post->category->slug; ?>/<?php echo $post->slug; ?>"></hero-photo>
+                <?php endif; ?>
 
-                <p><?php echo $category->description; ?></p>
+                <hgroup>
+                    <h2><a href="/<?php echo $post->category->slug; ?>/<?php echo $post->slug; ?>" title="<?php echo $post->category->title; ?> full post"><?php echo $post->title; ?></a></h2>
+                    <h4><?php echo date('l jS F Y', $post->written); ?></h4>
+                </hgroup>
 
-            </section>
+                <div class="introduction">
+                    <?php echo $post->introduction; ?>
+                </div>
 
-            <section class="posts">
-                <?php foreach ($category->posts as $post) : ?>
+                <a class="read-more" href="/<?php echo $post->category->slug; ?>/<?php echo $post->slug; ?>" title="<?php echo $post->category->title; ?> full post">Read more&hellip;</a>
 
-                    <article class="post">
+            </article>
 
-                        <?php if (isset($post->heroPhoto)) : ?>
-                            <a class="photo hero" href="/<?php echo $post->category->slug; ?>/<?php echo $post->slug; ?>" title="<?php echo $post->category->title; ?> full post" data-path="/<?php echo $post->category->slug.'/'.$post->slug.'/'.$post->heroPhoto; ?>"></a>
-                        <?php endif; ?>
+        <?php endforeach; ?>
+    </section>
 
-                        <hgroup>
-                            <h2><a href="/<?php echo $post->category->slug; ?>/<?php echo $post->slug; ?>" title="<?php echo $post->category->title; ?> full post"><?php echo $post->title; ?></a></h2>
-                            <h4><?php echo date('l jS F Y', $post->written); ?></h4>
-                        </hgroup>
-
-                        <div class="introduction">
-                            <?php echo $post->introduction; ?>
-                        </div>
-
-                        <a class="read-more" href="/<?php echo $post->category->slug; ?>/<?php echo $post->slug; ?>" title="<?php echo $post->category->title; ?> full post">Read more&hellip;</a>
-
-                    </article>
-
-                <?php endforeach; ?>
-            </section>
-
-        </div>
-
-        <script src="/assets/js/main.js"></script>
-    </body>
-</html>
+</div>

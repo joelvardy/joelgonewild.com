@@ -12,19 +12,15 @@ $post->heroPhoto = 'panorama-from-skylight-bar';
 
 <p>I had planned to visit the photography museum, however it was closed (I should have checked yesterday.) So after walking around old town I headed to the Skyline Bar to watch the snow fall from the 26th floor.</p>
 
-<div class="gallery">
-
-    <img data-slug="view-from-skyline-bar">
-
-</div>
+<gallery>
+    <gallery-photo path="view-from-skyline-bar"></gallery-photo>
+</gallery>
 
 <p>After watching the snow fall for hours, and drinking quite a lot of alcohol, I went for a walk in the crunchy snow :)</p>
 
-<div class="gallery">
-
-    <img data-slug="skyline-bar">
-    <img data-slug="radisson-blu-hotel">
-    <img data-slug="pilsetas-kanals">
-    <img data-slug="klostera-iela">
-
-</div>
+<gallery>
+    <gallery-photo path="skyline-bar"></gallery-photo>
+    <gallery-photo path="radisson-blu-hotel"></gallery-photo>
+    <gallery-photo path="pilsetas-kanals"></gallery-photo>
+    <gallery-photo path="klostera-iela"></gallery-photo>
+</gallery>

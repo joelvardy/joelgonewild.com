@@ -1,44 +1,37 @@
 <?php
 
-/**
- * Photo library
- *
- * @author	Joel Vardy <info@joelvardy.com>
- */
-
 namespace Travel;
 
 use Intervention\Image\ImageManagerStatic as Image;
 
-class Photo {
+class Photo
+{
 
 
-	/**
-	 * Resize a photo
-	 *
-	 * @return	boolean | string
-	 */
-	public static function resize($filepath, $size) {
+    public static function resize($filepath, $size)
+    {
 
-		$resized_filepath = CACHE_PATH.'/'.$size.'-'.md5_file(POSTS_PATH.'/'.$filepath);
+        $resized_filepath = CACHE_PATH . '/' . $size . '-' . md5_file(POSTS_PATH . '/' . $filepath);
 
-		if (file_exists($resized_filepath)) return $resized_filepath;
+        if (file_exists($resized_filepath)) {
+            return $resized_filepath;
+        }
 
-		$image = Image::make(POSTS_PATH.'/'.$filepath);
-		if ($image->width() > $image->height()) {
-			$image->widen($size, function ($constraint) {
-				$constraint->upsize();
-			});
-		} else {
-			$image->heighten($size, function ($constraint) {
-				$constraint->upsize();
-			});
-		}
-		$image->save($resized_filepath);
+        $image = Image::make(POSTS_PATH . '/' . $filepath);
+        if ($image->width() > $image->height()) {
+            $image->widen($size, function ($constraint) {
+                $constraint->upsize();
+            });
+        } else {
+            $image->heighten($size, function ($constraint) {
+                $constraint->upsize();
+            });
+        }
+        $image->save($resized_filepath);
 
-		return $resized_filepath;
+        return $resized_filepath;
 
-	}
+    }
 
 
 }

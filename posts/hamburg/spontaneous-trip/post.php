@@ -17,33 +17,27 @@ $post->heroPhoto = 'stadtpark-seals-beach';
 
 <p>As I left Stadtpark the weather started to close in - I continued into the centre of Hamburg, deciding to get a coffee and read a book while watching the rain through the window, at this point wondering whether this trip had been a good idea.</p>
 
-<div class="gallery">
-
-    <img data-slug="autumnal-colours-in-planten-un-blomen">
-    <img data-slug="saint-catherines-church">
-
-</div>
+<gallery>
+    <gallery-photo path="autumnal-colours-in-planten-un-blomen"></gallery-photo>
+    <gallery-photo path="saint-catherines-church"></gallery-photo>
+</gallery>
 
 <p>I was here, so I get into the rain and had a walk around Planten un Blomen which really looked beautiful with it's autumnal colours! I continued down through Wallring Park, and down to the bank of the Elbe river.</p>
 
 <p>I went to the Bismarck Monument before traveling some 24m down and walking through the 400m long Elbe Tunnel. I got some food in the Hard Rock Cafe, and headed to my hotel to have a shower and chill out for an hour or so before heading back out.</p>
 
-<div class="gallery">
-
-    <img data-slug="miniatur-wunderland-festival">
-    <img data-slug="miniatur-wunderland-alien-hunter">
-    <img data-slug="miniatur-wunderland-funicular">
-    <img data-slug="miniatur-wunderland-colosseum">
-    <img data-slug="miniatur-wunderland-saint-peters-square">
-
-</div>
+<gallery>
+    <gallery-photo path="miniatur-wunderland-festival"></gallery-photo>
+    <gallery-photo path="miniatur-wunderland-alien-hunter"></gallery-photo>
+    <gallery-photo path="miniatur-wunderland-funicular"></gallery-photo>
+    <gallery-photo path="miniatur-wunderland-colosseum"></gallery-photo>
+    <gallery-photo path="miniatur-wunderland-saint-peters-square"></gallery-photo>
+</gallery>
 
 <p>I decided to spend the evening at Miniatur Wunderland, the largest model railway in the world. At the time of writing it has; 1,040 trains made up of over 10,000 carriages, 385,000 lights, 130,000 trees, and 260,000 human figures. I think I could have stayed there all week and not seen all the little features, a truly stunning model.</p>
 
 <p>On the second day I visited the Church of St. Michael, up the tower, and down into the Crypt. I then had a steak for lunch, and took the S-Bahn back stopping at each of the parks along the way back to the airport.</p>
 
-<div class="gallery">
-
-    <img data-slug="hamburg-skyline-from-saint-michaels-church">
-
-</div>
+<gallery>
+    <gallery-photo path="hamburg-skyline-from-saint-michaels-church"></gallery-photo>
+</gallery>

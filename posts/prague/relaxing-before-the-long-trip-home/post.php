@@ -10,12 +10,10 @@ $post->heroPhoto = 'metro';
 
 <p>After I enjoyed a very relaxing massage we checked out of the hotel and proceeded to the mighty model train exhibition.</p>
 
-<div class="gallery">
-
-    <img data-slug="trains-rock-climbers" />
-    <img data-slug="trains-caravans" />
-
-</div>
+<gallery>
+    <gallery-photo path="trains-rock-climbers"></gallery-photo>
+    <gallery-photo path="trains-caravans"></gallery-photo>
+</gallery>
 
 <p>The rest of the day was mainly sitting in parks and taking in the nice weather before our time in Prague was through.</p>
 

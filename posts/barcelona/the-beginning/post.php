@@ -10,25 +10,19 @@
 
 <p>We got a train into the city from the airport, and stowed our bags in a locker before heading to the vast Olympic stadium built for the '92 games. From there we took a cable car to Montjuïc Castle, the photo above shows some of the cacti in the gardens around Montjuïc Castle. The weather was lovely, and a coastal breeze made sure we didn't get too hot.</p>
 
-<div class="gallery">
-
-    <img data-slug="view-past-cable-cars">
-
-</div>
+<gallery>
+    <gallery-photo path="view-past-cable-cars"></gallery-photo>
+</gallery>
 
 <p>Although after a whole day in the sun, I realised that coastal breeze had made me forget to cover up / use any suncream.. So I was a little pink.2</p>
 
-<div class="gallery">
-
-    <img data-slug="view-from-rooftops">
-    <img data-slug="port-cable-cars">
-
-</div>
+<gallery>
+    <gallery-photo path="view-from-rooftops"></gallery-photo>
+    <gallery-photo path="port-cable-cars"></gallery-photo>
+</gallery>
 
 <p>In the evening we visited The Magic Fountain of Montjuïc, a spectacular display of colour, light, motion, music and water acrobatics. The fountain is in front of the equally spectacular Palau Nacional (shown below.)</p>
 
-<div class="gallery">
-
-    <img data-slug="palau-nacional">
-
-</div>
+<gallery>
+    <gallery-photo path="palau-nacional"></gallery-photo>
+</gallery>

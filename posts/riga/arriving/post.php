@@ -10,17 +10,13 @@ $post->heroPhoto = 'house-of-the-blackheads';
 
 <p>I enjoyed walking on crunchy snow (which wasn't imminently about to melt - as it usually is in British cities) - I was glad I'd made the choice to buy a new pair of walking boots!</p>
 
-<div class="gallery">
-
-    <img data-slug="snowy-bastejkalna-park">
-    <img data-slug="icy-streetlamp">
-
-</div>
+<gallery>
+    <gallery-photo path="snowy-bastejkalna-park"></gallery-photo>
+    <gallery-photo path="icy-streetlamp"></gallery-photo>
+</gallery>
 
 <p>I walked around the Old Town, taking photos was broken up by having to stow the camera and warm my fingers back up (despite wearing a pair of gloves.)</p>
 
-<div class="gallery">
-
-    <img data-slug="frozen-daugava-river">
-
-</div>
+<gallery>
+    <gallery-photo path="frozen-daugava-river"></gallery-photo>
+</gallery>

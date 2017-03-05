@@ -10,12 +10,10 @@
 
 <p>I almost always take my dSLR / GoPros away with me when I travel - however this wasn't one of those trips, I didn't want to spend loads of time composing photos, and didn't want to worry about leaving my dSLR in a tent. So I was relying on my Nexus 5 for photos.</p>
 
-<div class="gallery">
-
-    <img data-slug="beer">
-    <img data-slug="view-over-the-city">
-    <img data-slug="burger">
-
-</div>
+<gallery>
+    <gallery-photo path="beer"></gallery-photo>
+    <gallery-photo path="view-over-the-city"></gallery-photo>
+    <gallery-photo path="burger"></gallery-photo>
+</gallery>
 
 <p>We landed in Berlin around 9am the weather was hot and sunny. We looked around the sights, the Brandenburg Gate, Reichstag, TV Tower, and of course the Trabant museum.</p>

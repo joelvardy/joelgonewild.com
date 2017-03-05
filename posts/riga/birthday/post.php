@@ -12,17 +12,13 @@ $post->heroPhoto = 'view-looking-south-east-from-st-peters-church';
 
 <p>I left the hotel at 11:30 after relaxing in the morning. While not as cold as the previous day it was necessary to keep moving to keep warm, this means I've covered most of the city already.</p>
 
-<div class="gallery">
-
-    <img data-slug="daugava-rail-bridge">
-    <img data-slug="view-from-st-pauls-cath">
-
-</div>
+<gallery>
+    <gallery-photo path="daugava-rail-bridge"></gallery-photo>
+    <gallery-photo path="view-from-st-pauls-cath"></gallery-photo>
+</gallery>
 
 <p>The photos above are from when I went up to the St. Peter's Church observation platform which has spectacular views over old town, although exposed 72m above the ground means taking photos in-between warming fingers back up.</p>
 
-<div class="gallery">
-
-    <img data-slug="parnorama-from-st-peters-church">
-
-</div>
+<gallery>
+    <gallery-photo path="parnorama-from-st-peters-church"></gallery-photo>
+</gallery>

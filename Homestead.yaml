@@ -1,6 +1,6 @@
 ---
 ip: "192.168.10.13"
-memory: 1024
+memory: 2048
 cpus: 1
 hostname: joelgonewild.com
 name: joelgonewild.com
@@ -16,5 +16,5 @@ folders:
       to: "/home/vagrant/joelgonewild.com"
 
 sites:
-    - map: homestead.dev
+    - map: joelgonewild.dev
       to: "/home/vagrant/joelgonewild.com/public"

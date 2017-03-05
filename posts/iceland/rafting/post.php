@@ -14,16 +14,12 @@
 
 <p>We then visited Kerio, a 55 meter deep crater formed 6,500 years ago which we walked down into. The bottom of the crater is below the water table, causing the water level to fluctuate with the water table.</p>
 
-<div class="gallery">
-
-	<img data-slug="kerio-crater" />
-
-</div>
+<gallery>
+    <gallery-photo path="kerio-crater"></gallery-photo>
+</gallery>
 
 <p>On the way back towards Reykjavik the weather (as it had been in the morning) was not very pleasant, although it made for a nice view of the surrounding hills.</p>
 
-<div class="gallery">
-
-	<img data-slug="roadside-fog" />
-
-</div>
+<gallery>
+    <gallery-photo path="roadside-fog"></gallery-photo>
+</gallery>

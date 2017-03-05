@@ -6,31 +6,35 @@ use Travel\Photo;
 Flight::route('GET /@category/@post/@photo(/@size)(.jpg)', function ($category_slug, $post_slug, $photo_slug, $size) {
 
     // Ensure category exists
-	$category = Blog::category($category_slug);
-	if ( ! $category) Flight::halt(404);
+    if (!$category = Blog::category($category_slug)) {
+        Flight::halt(404);
+    }
 
     // Ensure post exists
-	$post = Blog::post($category_slug, $post_slug);
-	if ( ! $post) Flight::halt(404);
+    if (!$post = Blog::post($category_slug, $post_slug)) {
+        Flight::halt(404);
+    }
 
     // Ensure photo exists
-	if ( ! isset($post->photos[$photo_slug])) Flight::halt(404);
+    if (!isset($post->photos[$photo_slug])) {
+        Flight::halt(404);
+    }
 
     // Get requested photo size
-	$size = (integer) ($size === null ? 800 : $size);
+    $size = (integer)($size === null ? 800 : $size);
 
-	try {
+    try {
 
-		$resized_photo = Photo::resize($post->photos[$photo_slug]->path, $size);
+        $resized_photo = Photo::resize($post->photos[$photo_slug]->path, $size);
 
-		Flight::etag(md5_file($resized_photo));
+        Flight::etag(md5_file($resized_photo));
 
-		header('Content-Type: image/jpeg');
-        header('Expires: '.gmdate('D, d M Y H:i:s \G\M\T', time() + (60 * 60 * 24 * 7))); // 7 Days
-		readfile($resized_photo);
+        header('Content-Type: image/jpeg');
+        header('Expires: ' . gmdate('D, d M Y H:i:s \G\M\T', time() + (60 * 60 * 24 * 7))); // 7 Days
+        readfile($resized_photo);
 
-	} catch (Exception $e) {
-		Flight::halt(500);
-	}
+    } catch (Exception $e) {
+        Flight::halt(500);
+    }
 
 });

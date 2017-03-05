@@ -1,18 +1,23 @@
 # Travel Blog
 
-This is a blog initially built to be ready for my 2014 Icelandic trip, however, if it works well, I plan to use it again in future trips.
+This is a blog initially built to document my 2014 Icelandic trip however I have since used it to document several trips I've been on both since and also previous trips.
 
 ## Development
 
-I'm using per-project Homestead configuration, to develop locally you should use the commands below:
+I'm using per-project Homestead configuration, to develop locally you should use the commands below to set up the project initially:
 
 ```
 composer install
 npm install
-vagrant up
+php vendor/bin/homestead make
+# Update details in ./Homestead.yaml
 echo 192.168.10.13 joelgonewild.dev | sudo tee -a /etc/hosts
-gulp watch
+vagrant up
 ```
+
+To have the assets automatically build based on changes (for development) run: `npm run watch`
+
+To generate the assets before commiting any code: `npm run production`
 
 ## Deployment
 

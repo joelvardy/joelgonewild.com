@@ -12,11 +12,9 @@ $post->heroPhoto = 'panorama';
 
 <p>Upon arriving in the city centre of Prague we decided to have a look around and see what was happening, within ten minutes we were watching a crew film a fight scene for The Right Europe.</p>
 
-<div class="gallery">
-
-    <img data-slug="cathedral" />
-
-</div>
+<gallery>
+    <gallery-photo path="cathedral"></gallery-photo>
+</gallery>
 
 <p>We walked up to Prague Castle and the cathedral, we ended up walking around most of old town trying to find our hotel after some navigation failures by me. Upon finding the hotel we each got a shower and while I looked for somewhere to eat Ed fell asleep snoring loudly.</p>
 

@@ -14,9 +14,7 @@
 
 <p>We then had a walk around Reykjavik, took some photos of the Sun Voyager, a steel sculpture which appears to resemble a Viking ship, but is actually a dream boat and ode to the sun. We had lunch before heading back to the cabin, we need to be well rested for what's in store tomorrow&hellip;</p>
 
-<div class="gallery">
-
-	<img data-slug="sun-voyager" />
-	<img data-slug="waffles" />
-
-</div>
+<gallery>
+    <gallery-photo path="sun-voyager"></gallery-photo>
+    <gallery-photo path="waffles"></gallery-photo>
+</gallery>

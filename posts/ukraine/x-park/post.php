@@ -10,11 +10,9 @@ $post->heroPhoto = 'on-a-pedalo';
 
 <p>My plan was to take the guys paintballing, however we ended up watching some people wakeboarding before getting a pedalo between the four of us - the language barrier was a little tricky as the people there don't speak much english - but Connor was a trooper and sorted us out!</p>
 
-<div class="gallery">
-
-    <img data-slug="pedalo-fun">
-
-</div>
+<gallery>
+    <gallery-photo path="pedalo-fun"></gallery-photo>
+</gallery>
 
 <p>We walked back to a metro then traveled the 7 stops down the line to get us back into the centre of Kiev (it's about 10p per journey - regardless of distance - on the metro.)</p>
 

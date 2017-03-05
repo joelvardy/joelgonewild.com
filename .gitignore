@@ -1,26 +1,7 @@
-# OSX
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
-._*
-.Spotlight-V100
-.Trashes
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+/.vagrant
+/node_modules
+/vendor
+Homestead.json
+Homestead.yaml
 
-# Vagrant
-/.vagrant/
-
-# Composer
-/vendor/
-
-# Build
-.sass-cache
-/node_modules/
-
-# Cache
 /cache/*

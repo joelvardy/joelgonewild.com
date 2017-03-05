@@ -10,11 +10,9 @@
 
 <p>I was looking forward to packing well before we left for Iceland, but some last minute freelance work put stop to that. Here I am at 8pm, six hours before we leave, having just finished packing.</p>
 
-<div class="gallery">
-
-	<img data-slug="top-down" />
-
-</div>
+<gallery>
+    <gallery-photo path="top-down"></gallery-photo>
+</gallery>
 
 <p>If you know me, you won't be surprised by the amount of photography, and computer equipment. As usual boxers and socks take up a surprising amount of space. Below is my full kit list:</p>
 
@@ -37,8 +35,6 @@
 	<li>Walking boots + casual trainers</li>
 </ul>
 
-<div class="gallery">
-
-	<img data-slug="packed" />
-
-</div>
+<gallery>
+    <gallery-photo path="packed"></gallery-photo>
+</gallery>

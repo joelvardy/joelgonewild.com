@@ -12,13 +12,11 @@
 
 <p>Following our relaxing time in the pool we ate an outstanding three-course meal at the <strong>LAVA Restaurant</strong> within the complex.</p>
 
-<div class="gallery">
-
-	<img data-slug="joel-jenny" />
-	<img data-slug="jenny-steve-joel" />
-	<img data-slug="joel" />
-	<img data-slug="lava-restaurant-beef" />
-
-</div>
+<gallery>
+    <gallery-photo path="joel-jenny"></gallery-photo>
+    <gallery-photo path="jenny-steve-joel"></gallery-photo>
+    <gallery-photo path="joel"></gallery-photo>
+    <gallery-photo path="lava-restaurant-beef"></gallery-photo>
+</gallery>
 
 <p>After arriving back at the cabin, we had some birthday Bollinger for Tanyas birthday and planned tomorrows activities&hellip;</p>

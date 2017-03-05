@@ -16,11 +16,9 @@
 
 <p>It's not actually too embarrassing using a GoPro <em>selfie pole</em> when you know you'll never see the people around you again.</p>
 
-<div class="gallery">
-
-	<img data-slug="strokkur-geyser" />
-
-</div>
+<gallery>
+    <gallery-photo path="strokkur-geyser"></gallery-photo>
+</gallery>
 
 <h3>The Frustrating</h3>
 
@@ -28,11 +26,9 @@
 
 <p>Having reviewed the photos, learning how to set up the camera, and progressing my post processing skills over the week. I was really looking forward to capturing more photos of the aurora borealis. Alas, I'm planning a trip to Finland in early 2016 and I should be able to get some amazing photos then.</p>
 
-<div class="gallery">
-
-	<img data-slug="aurora-borealis" />
-
-</div>
+<gallery>
+    <gallery-photo path="aurora-borealis"></gallery-photo>
+</gallery>
 
 <p>Unfortunately we rented a Ford Focus, and while it was a lovely modern car, having a 4x4 would be opened more opportunities for exploration.</p>
 
@@ -42,11 +38,9 @@
 
 <p>The group consensus is certainly that the <a href="/iceland/busy-day-of-epicness" title="Falljokull glacier">glacier walk</a> was the best activity all week. I would really like to do more of a glacier hike in the future.</p>
 
-<div class="gallery">
-
-	<img data-slug="joel-falljokull-glacier" />
-
-</div>
+<gallery>
+    <gallery-photo path="joel-falljokull-glacier"></gallery-photo>
+</gallery>
 
 <p>On the seventh day I could finally spell <em>Reykjavik</em> without having to look it up. I suppose that's something :P</p>
 
@@ -56,18 +50,14 @@
 
 <p>I was all up for trying some whale, but the opportunity didn't arise.</p>
 
-<div class="gallery">
-
-	<img data-slug="barbecue" />
-
-</div>
+<gallery>
+    <gallery-photo path="barbecue"></gallery-photo>
+</gallery>
 
 <h3>Goodbye</h3>
 
 <p>I speak for all four of us when I say we've had a blast. I'm already planning a trip back to Iceland, renting a big 4x4 and camping different areas rather than retuning to Reykjavik each evening.</p>
 
-<div class="gallery">
-
-	<img data-slug="night-cabin" />
-
-</div>
+<gallery>
+    <gallery-photo path="night-cabin"></gallery-photo>
+</gallery>

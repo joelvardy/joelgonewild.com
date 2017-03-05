@@ -12,10 +12,8 @@
 
 <p>It was nice to watch F1 cars in person for the first time. My brother enjoyed the F1 so much at one point he fell asleep in the afternoon sun.</p>
 
-<div class="gallery">
-
-    <img data-slug="steve-enjoying-the-f1">
-
-</div>
+<gallery>
+    <gallery-photo path="steve-enjoying-the-f1"></gallery-photo>
+</gallery>
 
 <p>After the Formula1 we headed back to the airport, and a flight back to the UK.. It was a shock stepping from the plane into the grim cold night in Liverpool.</p>

@@ -18,8 +18,6 @@ $post->heroPhoto = 'airport-bike-bags';
 
 <p>After checking in, and chilling out, the rain had slowed, so we went for a walk, found a bar, and got a beer.</p>
 
-<div class="gallery">
-
-    <img data-slug="morzine-cloud-lifting">
-
-</div>
+<gallery>
+    <gallery-photo path="morzine-cloud-lifting"></gallery-photo>
+</gallery>

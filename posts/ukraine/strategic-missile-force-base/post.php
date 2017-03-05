@@ -10,12 +10,10 @@ $post->heroPhoto = 'riding-a-rocket';
 
 <p>We met our guide at the entrance to the museum and she showed us how the missiles operated and the layout of the base. We then used the tunnels to go from the entrance over to the controller bunker, where we descended ten floors to the control room itself. It was very tight and it's hard to imagine how several people would have been able to work in that area for days at a time.</p>
 
-<div class="gallery">
-
-    <img data-slug="group-selfie">
-    <img data-slug="ed-looks-way-too-comfortable-handling-an-aa-gun">
-
-</div>
+<gallery>
+    <gallery-photo path="group-selfie"></gallery-photo>
+    <gallery-photo path="ed-looks-way-too-comfortable-handling-an-aa-gun"></gallery-photo>
+</gallery>
 
 <p>While jumping up onto a tank (in denim shorts) I hit my shin which caused quite a worrying buildup of fluid in my leg. And writing this up some five days later it's still ver painful :/</p>
 
