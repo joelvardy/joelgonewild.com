@@ -32,12 +32,12 @@ This is all about data, I want to keep a record of activities along with awesome
 
 ```
 posts/
-	iceland/
-		svinafellsjokull-glacier/
-			photos/
-				trekking-team.jpg
-			post.php
-		category.json
+    iceland/
+        svinafellsjokull-glacier/
+            photos/
+                trekking-team.jpg
+            post.php
+        category.json
 ```
 
 Built by [Joel Vardy][joelvardy].
