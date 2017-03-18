@@ -22,7 +22,7 @@ $post->heroPhoto = 'riding-a-rocket';
 <p>Earlier in the week we'd spotted a local Italian restaurant, and we headed there for our dinner before grabbing some souvenirs and getting a drink and heading back to the apartment to pack.</p>
 
 <div class="video aspect-16-9">
-    <iframe src="//player.vimeo.com/video/171652551?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="//player.vimeo.com/video/171652551" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 <p>Above is the video from the trip, I made the mistake of not planning what to shoot, which ultimately led to a lack of direction in the video, but I hope you can see past that :)</p>

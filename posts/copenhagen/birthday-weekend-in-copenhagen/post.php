@@ -42,5 +42,5 @@ $post->heroPhoto = 'nyhavn';
 <p>While in the airport waiting for my flight back to London I put together a short video.</p>
 
 <div class="video aspect-16-9">
-    <iframe src="//player.vimeo.com/video/198574850?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="//player.vimeo.com/video/198574850" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
