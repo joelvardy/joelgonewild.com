@@ -1,7 +1,4 @@
-/.vagrant
-/node_modules
-/vendor
-Homestead.json
-Homestead.yaml
-
-/cache/*
+/node_modules/
+/mix-manifest.json
+/public/*
+!/public/assets/
