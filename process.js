@@ -91,6 +91,7 @@ let processImageSizes = (imagePath, destinationPath) => {
 let generatePages = (posts) => {
     fs.writeFileSync('./public/index.html', homeTemplate({
         title: 'Joel Gone Wild',
+        description: 'I really enjoy exploring new places, so in 2014 I started writing down the things I had done both for others to read, and so future me can read too!',
         path: '/',
         posts,
     }), 'utf8');
@@ -99,6 +100,7 @@ let generatePages = (posts) => {
 
         fs.writeFileSync('./public/' + post.slug + '/index.html', postTemplate({
             title: post.title,
+            description: post.intro,
             path: '/' + post.slug + '/',
             posts,
             post,
