@@ -121,9 +121,11 @@ return (async () => {
         let publicPostPath = path.join('public', post.slug);
         makeDirectoryExist(publicPostPath);
 
-        const imagePaths = imagesIn(path.join(postPath, 'photos'));
-        for (let imagePath of imagePaths) {
-            await processImageSizes(imagePath, publicPostPath);
+        if (process.argv[2] !== '--no-photos') {
+            const imagePaths = imagesIn(path.join(postPath, 'photos'));
+            for (let imagePath of imagePaths) {
+                await processImageSizes(imagePath, publicPostPath);
+            }
         }
 
         posts.push(post);

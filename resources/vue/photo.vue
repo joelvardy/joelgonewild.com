@@ -1,9 +1,9 @@
 <template>
-    <a ref="container" :href="link"><img :src="imagePath"></a>
+    <a class="photo" ref="container" :href="link"><img :src="imagePath"></a>
 </template>
 
 <style lang="scss">
-    a {
+    a.photo {
         display: block;
         img {
             max-width: 100%;
