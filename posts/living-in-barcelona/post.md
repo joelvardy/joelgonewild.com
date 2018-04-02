@@ -7,7 +7,7 @@ Intro: I decided to move to Barcelona, I'm going to keep updating this post with
 
 ## Month 1
 
-I arrived in Barcelona on Monday 26th February 2017. I had booked a hostel until the following Monday with the hope that I would have found somewhere to live by then.
+I arrived in Barcelona on Monday 26th February 2018. I had booked a hostel until the following Monday with the hope that I would have found somewhere to live by then.
 
 Sure enough by the Thursday I had signed the contract and had the keys to my new house in Barcelona. Just up from the Segrada Familia.
 
