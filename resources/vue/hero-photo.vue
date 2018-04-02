@@ -35,10 +35,10 @@
             };
         },
         mounted: function () {
-            var _this = this;
-            var img = new Image();
+            let _this = this;
+            let img = new Image();
             img.onload = function () {
-                 _this.$el.setAttribute('style', 'background-image: url("' + _this.responsivePath() + '")');
+                _this.$el.setAttribute('style', 'background-image: url("' + _this.responsivePath() + '")');
                 _this.loaded = true;
             };
             img.src = this.responsivePath();
@@ -49,12 +49,10 @@
             },
             responsivePath: function () {
                 if (this.$refs.heroPhoto.clientWidth <= 400) {
-                    return this.path + '-400.jpg';
-                } else if (this.$refs.heroPhoto.clientWidth <= 800) {
                     return this.path + '-800.jpg';
-                } else if (this.$refs.heroPhoto.clientWidth <= 1200) {
+                } else if (this.$refs.heroPhoto.clientWidth <= 800) {
                     return this.path + '-1200.jpg';
-                } else if (this.$refs.heroPhoto.clientWidth <= 1600) {
+                } else if (this.$refs.heroPhoto.clientWidth <= 1200) {
                     return this.path + '-1600.jpg';
                 }
                 return this.path + '-2000.jpg';
