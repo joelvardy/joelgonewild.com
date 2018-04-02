@@ -49,3 +49,7 @@ I attended another techy meetup focused around natural language processing (some
 Knowing the end of the ski season was fast approaching I decided to spend the next weekend back in Andorra, this time there was so much fresh powder snow it was incredible!
 
 I stayed in Mountain Hostel Tarter which is expensive by hostel standards, but had really comfortable beds and a huge jacuzzi!
+
+## Month 2
+
+I began my second month in Barcelona by once again leaving the country. [This time going to Naples!](/2018-naples/).
