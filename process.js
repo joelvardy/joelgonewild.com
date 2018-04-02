@@ -114,7 +114,13 @@ return (async () => {
     makeDirectoryExist('public');
     let posts = [];
 
-    const postPaths = directoriesIn('posts');
+    let postPaths = [];
+    if (typeof process.argv[2] !== 'undefined') {
+        postPaths.push(process.argv[2]);
+    } else {
+        postPaths = directoriesIn('posts');
+    }
+
     for (let postPath of postPaths) {
 
         let post = processPost(path.join(postPath, 'post.md'));
