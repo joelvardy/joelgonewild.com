@@ -48,8 +48,19 @@ I attended another techy meetup focused around natural language processing (some
 
 Knowing the end of the ski season was fast approaching I decided to spend the next weekend back in Andorra, this time there was so much fresh powder snow it was incredible!
 
-I stayed in Mountain Hostel Tarter which is expensive by hostel standards, but had really comfortable beds and a huge jacuzzi!
+I stayed in Mountain Hostel Tarter which is expensive by hostel standards, but had really comfortable beds, a huge jacuzzi, and I met some lovely people there :)
+
+Although having watched [the scary ski lift video](https://www.reuters.com/article/us-georgia-accident-ski-lift/runaway-chair-lift-injures-skiers-at-georgian-resort-idUSKCN1GS206) I found myself contemplating at what point I would jump for every ski lift I got on over the weekend!
 
 ## Month 2
 
 I began my second month in Barcelona by once again leaving the country. [This time going to Naples!](/2018-naples/).
+
+My brother and his partner came over to visit Thursday through Sunday. I was working during the week, meeting up with them in the evenings. But on the Saturday we went to Montserrat. It’s about an hour outside of Barcelona to the town in the valley with a choice of either cable car or mountain railway up to the monastery on the mountain.
+
+We went up the cable car, followed by a funicular railway, and then a small hike to the top of the mountain. It was windy but the views of the valley and the monastery below were spectacular.
+
+<gallery>
+    <gallery-photo path="montserrat-view-down-to-monastery"></gallery-photo>
+    <gallery-photo path="montserrat-cable-car-below"></gallery-photo>
+</gallery>
