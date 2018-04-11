@@ -64,3 +64,9 @@ We went up the cable car, followed by a funicular railway, and then a small hike
     <gallery-photo path="montserrat-view-down-to-monastery"></gallery-photo>
     <gallery-photo path="montserrat-cable-car-below"></gallery-photo>
 </gallery>
+
+On the 10th April I visited Palau de la Música Catalana to see Orquesta de Guitarras de Barcelona, an orchestra of classical guitarists it was the first time I'd seen a guitar orchestra, or indeed listened to classical Spanish music.
+
+<gallery>
+    <gallery-photo path="orquesta-de-guitarras-de-barcelona"></gallery-photo>
+</gallery>
