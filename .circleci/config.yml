@@ -1,0 +1,46 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: joelvardy/circleci-node-awscli:master
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - dependencies-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Install JS dependancies
+          command: yarn install --no-progress
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: dependencies-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Generate static assets (JS / CSS)
+          command: yarn run production
+
+      - run:
+          name: Process posts
+          command: ./process.js
+
+      - store_artifacts:
+          path: yarn-error.log
+          destination: yarn-error.log
+
+      - deploy:
+          name: Deploy to S3
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              aws s3 sync public/. s3://joelgonewild.com --acl=public-read --delete --size-only
+              aws cloudfront create-invalidation --distribution-id E3GP1ATD60TRSR --paths=/*
+            else
+              echo "Deployments for this branch aren't configured"
+            fi

@@ -2,3 +2,15 @@
 /mix-manifest.json
 /public/*
 !/public/assets/
+!/public/barcelona/
+!/public/category/
+!/public/copenhagen/
+!/public/germany-belgium/
+!/public/hamburg/
+!/public/iceland/
+!/public/morzine/
+!/public/prague/
+!/public/riga/
+!/public/ukraine/
+!/public/error.html
+!/public/index.html
