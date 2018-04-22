@@ -70,3 +70,15 @@ On the 10th April I visited Palau de la Música Catalana to see Orquesta de Guit
 <gallery>
     <gallery-photo path="orquesta-de-guitarras-de-barcelona"></gallery-photo>
 </gallery>
+
+My friend Connor came over to visit in the middle of April and we first went to PortAventura, a really nice theme park a short train journey outside of Barcelona. Just as our train was approaching the final station the carriage we were in was empty, and with spirits high we were singing Sk8er Boi (the song by Avril Lavigne) out loud, until we saw a woman sat two rows in front of us raise her head. Obviously we were too busy laughing to sing after that!
+
+We got into the park just as it opened and immediately headed to the top of the park and managed to ride Shambala and Dragon Khan four times within an hour before the queues inevitably began to build.
+
+<gallery>
+    <gallery-photo path="portaventura-theme-park"></gallery-photo>
+</gallery>
+
+We had a good time at the park, I rode Hurakan Condor (a 100m vertical drop ride) 3 times but it never got any easier! It’s terrifying being hauled up 100m in the air knowing you will soon be plummeting back to earth. On the final time they unexpectedly tilted us forwards just before dropping.
+
+The following day I flew with Connor to [Fuerteventura](/2018-fuerteventura/) where we explored the island by car over five days.
