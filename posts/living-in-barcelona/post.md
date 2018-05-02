@@ -5,7 +5,7 @@ Hero: view-out-from-montjuic-castle
 Intro: I decided to move to Barcelona, I'm going to keep updating this post with things I've been up to while I'm here.
 -->
 
-## Month 1
+## End of February and March
 
 I arrived in Barcelona on Monday 26th February 2018. I had booked a hostel until the following Monday with the hope that I would have found somewhere to live by then.
 
@@ -52,7 +52,7 @@ I stayed in Mountain Hostel Tarter which is expensive by hostel standards, but h
 
 Although having watched [the scary ski lift video](https://www.reuters.com/article/us-georgia-accident-ski-lift/runaway-chair-lift-injures-skiers-at-georgian-resort-idUSKCN1GS206) I found myself contemplating at what point I would jump for every ski lift I got on over the weekend!
 
-## Month 2
+## April
 
 I began my second month in Barcelona by once again leaving the country. [This time going to Naples!](/2018-naples/).
 
@@ -82,3 +82,12 @@ We got into the park just as it opened and immediately headed to the top of the 
 We had a good time at the park, I rode Hurakan Condor (a 100m vertical drop ride) 3 times but it never got any easier! It’s terrifying being hauled up 100m in the air knowing you will soon be plummeting back to earth. On the final time they unexpectedly tilted us forwards just before dropping.
 
 The following day I flew with Connor to [Fuerteventura](/2018-fuerteventura/) where we explored the island by car over five days.
+
+At the end of April my friend Ed came to visit me, we travelled up to Mount Tibidabo which has a grand church as well as an ammusment park on the top and we spent a day looking around and riding some of the rides.
+
+<gallery>
+    <gallery-photo path="temple-expiatori-del-sagrat-cor"></gallery-photo>
+    <gallery-photo path="tibidabo-ferris-wheel"></gallery-photo>
+</gallery>
+
+The following day we headed to Montjuic Castle, and the old Olympic park. Obviously as well as these trips there was a lot of catching up and drinking.
