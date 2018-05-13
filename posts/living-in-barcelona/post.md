@@ -91,3 +91,14 @@ At the end of April my friend Ed came to visit me, we travelled up to Mount Tibi
 </gallery>
 
 The following day we headed to Montjuic Castle, and the old Olympic park. Obviously as well as these trips there was a lot of catching up and drinking.
+
+## May
+
+I had a quiet weekend at the start of May, choosing to [work on a small side project](https://medium.com/football-whispers-engineering-and-data-sci/failed-builds-cost-more-than-just-time-4e7c196cc8bc). However the second weekend was the Spanish Grand Prix at Circuit de Barcelona-Catalunya. I'd bought tickets a back in March, but hadn't actually watched a single race in 2018. I'm just not an F1 fan like I used to be.
+
+Dispite that, I'm glad I went (I'd considered selling my ticket) and I enjoyed watching a (fairly boring) race.
+
+<gallery>
+    <gallery-photo path="barcelona-f1-bottas-and-vettel"></gallery-photo>
+    <gallery-photo path="barcelona-f1-vardy"></gallery-photo>
+</gallery>
