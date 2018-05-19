@@ -108,11 +108,11 @@ My mum and one of my two sisters joined me for the week after the Formula 1. I t
 On the Tuesday we went to Montserrat, for the evening I had bought tickets to an concert on the rooftop of Casa Batlló a woman called Marga Mbandeand was singing with an acoustic guitarist accompanying her.
 
 <gallery>
-    <gallery-photo path="casa-batllo-joel-rebecca-diane"></gallery-photo>
     <gallery-photo path="casa-batllo"></gallery-photo>
-    <gallery-photo path="consert-at-casa-batllo"></gallery-photo>
-    <gallery-photo path="montjuic-magic-fountain-top"></gallery-photo>
     <gallery-photo path="montserrat-joel-rebecca-diane"></gallery-photo>
+    <gallery-photo path="montjuic-magic-fountain-top"></gallery-photo>
+    <gallery-photo path="consert-at-casa-batllo"></gallery-photo>
+    <gallery-photo path="casa-batllo-joel-rebecca-diane"></gallery-photo>
 </gallery>
 
 On the Thursday we went to La Boqueria market and walked back through the old town to get to then the beach where we had cocktails. My mum and sister went shopping for a while, and we met up on Montjuïc to watch the Magic Fountain. After the show we got some tapas and headed to bed.
