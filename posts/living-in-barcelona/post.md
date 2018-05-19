@@ -96,9 +96,23 @@ The following day we headed to Montjuic Castle, and the old Olympic park. Obviou
 
 I had a quiet weekend at the start of May, choosing to [work on a small side project](https://medium.com/football-whispers-engineering-and-data-sci/failed-builds-cost-more-than-just-time-4e7c196cc8bc). However the second weekend was the Spanish Grand Prix at Circuit de Barcelona-Catalunya. I'd bought tickets a back in March, but hadn't actually watched a single race in 2018. I'm just not an F1 fan like I used to be.
 
-Dispite that, I'm glad I went (I'd considered selling my ticket) and I enjoyed watching a (fairly boring) race.
+Despite that, I'm glad I went (I'd considered selling my ticket) and I enjoyed watching a (fairly boring) race.
 
 <gallery>
     <gallery-photo path="barcelona-f1-bottas-and-vettel"></gallery-photo>
     <gallery-photo path="barcelona-f1-vardy"></gallery-photo>
 </gallery>
+
+My mum and one of my two sisters joined me for the week after the Formula 1. I took two days off work, allowing them to explore on their own the rest of the time.
+
+On the Tuesday we went to Montserrat, for the evening I had bought tickets to an concert on the rooftop of Casa Batlló a woman called Marga Mbandeand was singing with an acoustic guitarist accompanying her.
+
+<gallery>
+    <gallery-photo path="casa-batllo-joel-rebecca-diane"></gallery-photo>
+    <gallery-photo path="casa-batllo"></gallery-photo>
+    <gallery-photo path="consert-at-casa-batllo"></gallery-photo>
+    <gallery-photo path="montjuic-magic-fountain-top"></gallery-photo>
+    <gallery-photo path="montserrat-joel-rebecca-diane"></gallery-photo>
+</gallery>
+
+On the Thursday we went to La Boqueria market and walked back through the old town to get to then the beach where we had cocktails. My mum and sister went shopping for a while, and we met up on Montjuïc to watch the Magic Fountain. After the show we got some tapas and headed to bed.
