@@ -116,3 +116,28 @@ On the Tuesday we went to Montserrat, for the evening I had bought tickets to an
 </gallery>
 
 On the Thursday we went to La Boqueria market and walked back through the old town to get to then the beach where we had cocktails. My mum and sister went shopping for a while, and we met up on Montjuïc to watch the Magic Fountain. After the show we got some tapas and headed to bed.
+
+Two days after my mum and sister left, I flew back to the UK (business trip) for 10 days. As part of that we had our annual self-hosted football match.
+
+<gallery>
+    <gallery-photo path="fw3-team-1"></gallery-photo>
+    <gallery-photo path="fw3-team-2"></gallery-photo>
+</gallery>
+
+## June
+
+The weekend after I got back from the UK I took a day trip to Girona. I love that I can walk into a station and get a return ticket on a high speed train to a city 100km away for less than £25.
+
+<gallery>
+    <gallery-photo path="girona-skyline"></gallery-photo>
+    <gallery-photo path="girona-cathedral"></gallery-photo>
+    <gallery-photo path="girona-city-wall"></gallery-photo>
+    <gallery-photo path="girona-arab-baths"></gallery-photo>
+</gallery>
+
+I was working pretty hard through early June to get Football Whispers ready for the World Cup. But come the weekend of the 16th, the World Cup had started. I'd watched Spain's first game. I headed back to Circuit de Barcelona-Catalunya to watch the action from the MotoGP riders.
+
+<gallery>
+    <gallery-photo path="motogp-1"></gallery-photo>
+    <gallery-photo path="motogp-2"></gallery-photo>
+</gallery>
