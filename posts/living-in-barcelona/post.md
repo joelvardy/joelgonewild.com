@@ -141,3 +141,11 @@ I was working pretty hard through early June to get Football Whispers ready for 
     <gallery-photo path="motogp-1"></gallery-photo>
     <gallery-photo path="motogp-2"></gallery-photo>
 </gallery>
+
+On day I was walking through Park De La Ciutadella, saw a big crowd and walked towards it, only to see a full symphony orchestra playing. It was a really nice surprise and a stuck around to listen for a while.
+
+A few days later I noticed the sound of firecrackers being set off, and the frequency increased for a few days, I finally Googled it on the Sunday and discovered that was the night before the [Feast of Sant Joan](https://www.barcelona-tourist-guide.com/en/events/sant-joan/feast-sant-joan.html) celebration. That evening there were a terrific amount of fireworks being set off on the street below my apartment.
+
+## July
+
+During the end of June and the start of July I've spent a lot of free time watching World Cup football matches, I've never really been too interested in watching football (despite working for a football company) but this World Cup has really grabbed me, and it's even better with England progressing so far.
