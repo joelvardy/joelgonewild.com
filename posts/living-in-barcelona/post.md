@@ -148,4 +148,20 @@ A few days later I noticed the sound of firecrackers being set off, and the freq
 
 ## July
 
-During the end of June and the start of July I've spent a lot of free time watching World Cup football matches, I've never really been too interested in watching football (despite working for a football company) but this World Cup has really grabbed me, and it's even better with England progressing so far.
+During the end of June and the start of July I've spent a lot of free time watching World Cup football matches, I've never really been too interested in watching football (despite working for a football company) but I ended up watching 24 our of 64 games!
+
+Mid July I went to [Liquicity](https://liquicity.com/) a drum and bass music festival an hour outside of Amsterdam - the music was good (not what I'd usually listen to) but the atmosphere and the relaxation were perfect.
+
+<gallery>
+    <gallery-photo path="liquicity-giant-unicorn"></gallery-photo>
+    <gallery-photo path="liquicity"></gallery-photo>
+    <gallery-photo path="rave-joel"></gallery-photo>
+</gallery>
+
+I was then over in the UK for a week and a half seeing friends and family, colleagues, having meetings, and attending a 2 day Golang conference.
+
+On one evening I walked up to the Bunker del Carmel in the hills a short walk from where I live.
+
+<gallery>
+    <gallery-photo path="bunker-del-carmel"></gallery-photo>
+</gallery>
