@@ -160,8 +160,26 @@ Mid July I went to [Liquicity](https://liquicity.com/) a drum and bass music fes
 
 I was then over in the UK for a week and a half seeing friends and family, colleagues, having meetings, and attending a 2 day Golang conference.
 
+## August
+
 On one evening I walked up to the Bunker del Carmel in the hills a short walk from where I live.
 
 <gallery>
     <gallery-photo path="bunker-del-carmel"></gallery-photo>
 </gallery>
+
+I decided to go back to Andorra so I could experience it in the summer, I was there Saturday through Monday. On the Sunday I went on a 20km hike out from the hostel I was staying in, over towards the French border, it was a beautiful day, and I confess I might have caught the sun a little bit.
+
+On the Monday I spent several hours in [Caldea](https://www.caldea.com/en/), both Europe's largest spa and Andorra's tallest building. It was a nice way to while away the hours before my bus back to Barcelona.
+
+<gallery>
+    <gallery-photo path="andorra-hike-hay-bales"></gallery-photo>
+    <gallery-photo path="andorra-hike-mountain-river"></gallery-photo>
+    <gallery-photo path="andorra-picnic-spot"></gallery-photo>
+    <gallery-photo path="andorra-hike-almost-at-the-top"></gallery-photo>
+    <gallery-photo path="andorra-caldea"></gallery-photo>
+</gallery>
+
+## September
+
+At the start of September I took a long weekend trip to [Nuremberg, Germany](/2018-nuremberg/).
