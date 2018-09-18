@@ -182,4 +182,10 @@ On the Monday I spent several hours in [Caldea](https://www.caldea.com/en/), bot
 
 ## September
 
-At the start of September I took a long weekend trip to [Nuremberg, Germany](/2018-nuremberg/).
+At the start of September I took a long weekend trip to [Nuremberg, Germany](/2018-nuremberg/). Before then heading off for a five day [trip to Porto](/2018-porto/).
+
+I also took a trip to the aquarium in Barcelona, which was quite fun.
+
+<gallery>
+    <gallery-photo path="joel-in-the-aquarium"></gallery-photo>
+</gallery>
