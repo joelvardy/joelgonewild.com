@@ -184,8 +184,30 @@ On the Monday I spent several hours in [Caldea](https://www.caldea.com/en/), bot
 
 At the start of September I took a long weekend trip to [Nuremberg, Germany](/2018-nuremberg/). Before then heading off for a five day [trip to Porto](/2018-porto/).
 
-I also took a trip to the aquarium in Barcelona, which was quite fun.
+I was working quite a lot because of the time off travelling, but I did go to the aquarium in Barcelona which was quite fun.
 
 <gallery>
     <gallery-photo path="joel-in-the-aquarium"></gallery-photo>
+</gallery>
+
+At the end of the month a flew away again, this time to surprised my dad who was in London for his Birthday with my mum. We had a lovely meal overlooking St. Pauls and while I was in London I managed to catch up with colleagues and some friends.
+
+## October
+
+Through October I visited some of the tourist places; including Hospital de Sant Pau and the Segrada Familiar, which are really close to me (I live on Av. De Gaudí the pedestrianised street running between the two places.)
+
+I was also up the Mirador de Colom, a monument dedicated to Christopher Columbus, when it was surrounded by (peaceful) protestors who were protesting colonialism.
+
+<gallery>
+    <gallery-photo path="hospital-de-sant-pau"></gallery-photo>
+    <gallery-photo path="inside-hospital-de-sant-pau"></gallery-photo>
+    <gallery-photo path="inside-segrada-familia"></gallery-photo>
+</gallery>
+
+Later in October I spent an afternoon in Tarragona which has been on my todo list for a while, it's a very nice town, much more relaxed than Barcelona, and it's really nice to see the Roman architecture exposed throughout.
+
+<gallery>
+    <gallery-photo path="tarragona-cathedral-roof"></gallery-photo>
+    <gallery-photo path="tortoise-at-tarragona-cathedral"></gallery-photo>
+    <gallery-photo path="tarragona-amphitheatre"></gallery-photo>
 </gallery>
