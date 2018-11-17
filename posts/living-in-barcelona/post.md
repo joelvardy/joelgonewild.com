@@ -211,3 +211,22 @@ Later in October I spent an afternoon in Tarragona which has been on my todo lis
     <gallery-photo path="tortoise-at-tarragona-cathedral"></gallery-photo>
     <gallery-photo path="tarragona-amphitheatre"></gallery-photo>
 </gallery>
+
+## November
+
+I kicked November off by flying back to the UK to spend bonfire night with my family, as usual we built a big fire, lit fireworks and had fun.
+
+<gallery>
+    <gallery-photo path="bonfire-wide"></gallery-photo>
+    <gallery-photo path="bonfire-close"></gallery-photo>
+</gallery>
+
+A few days after the bonfire one of my friends and his girlfriend came to visit me, we went to the Museum of Illusions on the day they arrived, then the PortAventura theme park the following day, before going to the castle the following day.
+
+<gallery>
+    <gallery-photo path="angel-joel-museum-of-illusions"></gallery-photo>
+    <gallery-photo path="puppet-joel-museum-of-illusions"></gallery-photo>
+    <gallery-photo path="portaventura-halloween-display"></gallery-photo>
+</gallery>
+
+The day after they left a colleague was in Barcelona for a conference, we met up and had dinner and some drinks which was nice. And the following day I headed to [Bilbao for a city-break](/2018-bilbao/).
