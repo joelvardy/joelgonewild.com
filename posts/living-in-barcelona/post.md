@@ -244,3 +244,7 @@ I did however have a wonderful Christmas. I stayed in a lovely cottage on a farm
     <gallery-photo path="christmas-cottage-honley-2019-fire"></gallery-photo>
     <gallery-photo path="christmas-cottage-honley-2019"></gallery-photo>
 </gallery>
+
+## January
+
+As is tradition, I went away fro my Birthday this time [to Finland](/2019-finland/).
