@@ -247,4 +247,4 @@ I did however have a wonderful Christmas. I stayed in a lovely cottage on a farm
 
 ## January
 
-As is tradition, I went away fro my Birthday this time [to Finland](/2019-finland/).
+As is tradition, I went away for my Birthday this time [to Finland](/2019-finland/).
