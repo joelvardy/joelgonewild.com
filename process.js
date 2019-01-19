@@ -24,23 +24,23 @@ handlebars.registerPartial('layout', fs.readFileSync('./templates/layout.hbs', '
 const homeTemplate = handlebars.compile(fs.readFileSync('./templates/home.hbs', 'utf8'));
 const postTemplate = handlebars.compile(fs.readFileSync('./templates/post.hbs', 'utf8'));
 
-let makeDirectoryExist = (path) => {
+const makeDirectoryExist = (path) => {
     if (!fs.existsSync(path)) {
         fs.mkdirSync(path);
     }
 };
 
-let makeSlug = (string) => {
+const makeSlug = (string) => {
     return slugify(string, {
         lower: true,
     });
 };
 
-let directoryContents = (rootPath, filter) => {
+const directoryContents = (rootPath, filter) => {
     let results = [];
-    let directories = fs.readdirSync(rootPath);
+    const directories = fs.readdirSync(rootPath);
     directories.forEach((directory) => {
-        let directoryPath = path.join(rootPath, directory);
+        const directoryPath = path.join(rootPath, directory);
         if (typeof filter === 'function') {
             if (!filter(directoryPath)) {
                 return;
@@ -51,19 +51,19 @@ let directoryContents = (rootPath, filter) => {
     return results;
 };
 
-let directoriesIn = (rootPath) => {
+const directoriesIn = (rootPath) => {
     return directoryContents(rootPath, (itemPath) => {
         return fs.lstatSync(itemPath).isDirectory();
     });
 };
 
-let imagesIn = (rootPath) => {
+const imagesIn = (rootPath) => {
     return directoryContents(rootPath, (itemPath) => {
         return path.parse(itemPath).ext === '.jpg';
     });
 };
 
-let processPost = (postMarkdownPath) => {
+const processPost = (postMarkdownPath) => {
     let postFile = fs.readFileSync(postMarkdownPath);
     let post = markdownData.parse(postFile.toString());
     return {
@@ -76,12 +76,12 @@ let processPost = (postMarkdownPath) => {
     };
 };
 
-let processImage = async (imagePath, destinationPath, filename, imageSize) => {
+const processImage = async (imagePath, destinationPath, filename, imageSize) => {
     let filePath = path.join(destinationPath, filename + '-' + imageSize + '.jpg');
     await sharp(imagePath).resize(imageSize, imageSize).max().toFile(filePath);
 };
 
-let processImageSizes = (imagePath, destinationPath) => {
+const processImageSizes = (imagePath, destinationPath) => {
     console.log('Processing image: ' + imagePath);
     const filename = path.parse(imagePath).name;
     let images = imageSizes.slice(0);
@@ -90,7 +90,7 @@ let processImageSizes = (imagePath, destinationPath) => {
     }));
 };
 
-let generatePages = (posts) => {
+const generatePages = (posts) => {
     fs.writeFileSync('./public/index.html', homeTemplate({
         title: 'Joel Gone Wild',
         description: 'I really enjoy exploring new places, so in 2014 I started writing down the things I had done both for others to read, and so future me can read too!',
@@ -125,8 +125,8 @@ return (async () => {
 
     for (let postPath of postPaths) {
 
-        let post = processPost(path.join(postPath, 'post.md'));
-        let publicPostPath = path.join('public', post.slug);
+        const post = processPost(path.join(postPath, 'post.md'));
+        const publicPostPath = path.join('public', post.slug);
         makeDirectoryExist(publicPostPath);
 
         if (process.argv[2] !== '--no-photos') {

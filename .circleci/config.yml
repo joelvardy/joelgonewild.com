@@ -39,7 +39,7 @@ jobs:
           name: Deploy to S3
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              aws s3 sync public/. s3://joelgonewild.com --acl=public-read --delete --size-only
+              aws s3 sync public/. s3://joelgonewild.com --acl=public-read --delete
               aws cloudfront create-invalidation --distribution-id E3GP1ATD60TRSR --paths=/*
             else
               echo "Deployments for this branch aren't configured"
