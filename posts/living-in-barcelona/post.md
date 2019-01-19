@@ -230,3 +230,17 @@ A few days after the bonfire one of my friends and his girlfriend came to visit 
 </gallery>
 
 The day after they left a colleague was in Barcelona for a conference, we met up and had dinner and some drinks which was nice. And the following day I headed to [Bilbao for a city-break](/2018-bilbao/).
+
+Another friend (who'd already been over to visit me in the summer) arrived the following weekend, we looked around more of Barcelona and had drinks together.
+
+## December
+
+I was in the UK for most of December, returning to Barcelona only to see a few friends for a week, which did allow me to see some of the Christmas markets which had been setup around the city.
+
+I did however have a wonderful Christmas. I stayed in a lovely cottage on a farm just outside the town of Honley in Yorkshire.
+
+<gallery>
+    <gallery-photo path="christmas-cottage-honley-2019-bedroom"></gallery-photo>
+    <gallery-photo path="christmas-cottage-honley-2019-fire"></gallery-photo>
+    <gallery-photo path="christmas-cottage-honley-2019"></gallery-photo>
+</gallery>
