@@ -19,7 +19,7 @@ The next day I had a wonderful breakfast of cakes and coffee before shopping, wo
     <gallery-photo path="river-in-the-evening"></gallery-photo>
 </gallery>
 
-On the Sunday I went to the Documentation Centre at the Nazi Party Rally Grounds, which focused on how the Nazi party formed, how Nuremberg was used for many rallies, and subsequent trials which tool place in Nuremberg.
+On the Sunday I went to the Documentation Centre at the Nazi Party Rally Grounds, which focused on how the Nazi party formed, how Nuremberg was used for many rallies, and subsequent trials which took place in Nuremberg.
 
 After the gloomy subject or Nazi war criminals, I went to a funfair which was open just down the road. Beer, cocktails, good street food, and funfair rides are a good way to bring moral back up.
 
