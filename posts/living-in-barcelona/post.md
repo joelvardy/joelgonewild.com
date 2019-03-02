@@ -248,3 +248,29 @@ I did however have a wonderful Christmas. I stayed in a lovely cottage on a farm
 ## January
 
 As is tradition, I went away for my Birthday this time [to Finland](/2019-finland/).
+
+After Finland, I was in the UK for work, Spain for a week, and then back in the UK making plans to move back with my girlfriend.
+
+## February
+
+I returned to Barcelona on the 5th of February, followed by my mum and sister a few days later. We travelled up to Andorra to go skiing for a long weekend, the weather was wonderful for the whole long weekend, we skied for 3 days, and on the final day we relaxed at the Caldea spa I'd been to before.
+
+<gallery>
+    <gallery-photo path="andorra-from-chairlift-2019"></gallery-photo>
+    <gallery-photo path="andorra-rebecca-diane-joel"></gallery-photo>
+    <gallery-photo path="andorra-feb-2019"></gallery-photo>
+</gallery>
+
+After my mum and sister left I was preparing to leave Barcelona but I still managed to try a few new things, I visited Palau Güell, a mansion designed by Gaudí for Eusebi Güell, who lived here before moving into a house in what is Parc Güell. I didn't realise this before. The house was very nice, and the winter seems to be over with long sunny days returning.
+
+<gallery>
+    <gallery-photo path="palau-guell-cellar"></gallery-photo>
+    <gallery-photo path="palau-guell-ceiling"></gallery-photo>
+    <gallery-photo path="palau-guell-roof"></gallery-photo>
+</gallery>
+
+On the 19th of Feb, I checked out of my apartment in Barcelona, and stayed in a hotel for a few days before returning to the UK.
+
+I really enjoyed spending a year living in Barcelona. This post is a really nice reminder of the things I got upto but it's time to start another chapter in my life.
+
+_Out of curiosity I decided to see how much I've flown in the last 12 months. I've had 34 flights covering ~43,287km, and ~70hrs in the sky. That number will be lower next year!_
