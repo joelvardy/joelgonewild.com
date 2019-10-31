@@ -13,7 +13,7 @@
     "handlebars-layouts": "^3.1.4",
     "handlebars.moment": "^1.0.4",
     "laravel-mix": "^1.7.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "markdown-data": "^0.7.0",
     "markdown-it": "^8.4.0",
     "moment": "^2.20.1",
