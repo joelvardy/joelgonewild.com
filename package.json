@@ -9,7 +9,7 @@
     "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "handlebars": "^4.0.11",
+    "handlebars": "^4.3.0",
     "handlebars-layouts": "^3.1.4",
     "handlebars.moment": "^1.0.4",
     "laravel-mix": "^1.7.2",
