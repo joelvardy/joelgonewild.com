@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-'use strict';
-
 const fs = require('fs');
 const path = require('path');
 const slugify = require('slugify');
@@ -19,10 +17,10 @@ const imageSizes = [400, 800, 1200, 1600, 2000];
 handlebarsMoment.registerHelpers(handlebars);
 handlebars.registerHelper(handlebarsLayouts(handlebars));
 
-handlebars.registerPartial('layout', fs.readFileSync('./templates/layout.hbs', 'utf8'));
+handlebars.registerPartial('layout', fs.readFileSync('./src/templates/layout.hbs', 'utf8'));
 
-const homeTemplate = handlebars.compile(fs.readFileSync('./templates/home.hbs', 'utf8'));
-const postTemplate = handlebars.compile(fs.readFileSync('./templates/post.hbs', 'utf8'));
+const homeTemplate = handlebars.compile(fs.readFileSync('./src/templates/home.hbs', 'utf8'));
+const postTemplate = handlebars.compile(fs.readFileSync('./src/templates/post.hbs', 'utf8'));
 
 const makeDirectoryExist = (path) => {
     if (!fs.existsSync(path)) {
@@ -78,7 +76,10 @@ const processPost = (postMarkdownPath) => {
 
 const processImage = async (imagePath, destinationPath, filename, imageSize) => {
     let filePath = path.join(destinationPath, filename + '-' + imageSize + '.jpg');
-    await sharp(imagePath).resize(imageSize, imageSize).max().toFile(filePath);
+    await sharp(imagePath).resize(imageSize, imageSize, {
+        fit: sharp.fit.inside,
+        withoutEnlargement: true,
+    }).toFile(filePath);
 };
 
 const processImageSizes = (imagePath, destinationPath) => {
@@ -90,8 +91,9 @@ const processImageSizes = (imagePath, destinationPath) => {
     }));
 };
 
-const generatePages = (posts) => {
+const generatePages = (posts, css) => {
     fs.writeFileSync('./public/index.html', homeTemplate({
+        css,
         title: 'Joel Gone Wild',
         description: 'I really enjoy exploring new places, so in 2014 I started writing down the things I had done both for others to read, and so future me can read too!',
         path: '/',
@@ -101,6 +103,7 @@ const generatePages = (posts) => {
     for (let post of posts) {
 
         fs.writeFileSync('./public/' + post.slug + '/index.html', postTemplate({
+            css,
             title: post.title,
             description: post.intro,
             path: '/' + post.slug + '/',
@@ -117,7 +120,7 @@ return (async () => {
     let posts = [];
 
     let postPaths = [];
-    if (typeof process.argv[2] !== 'undefined') {
+    if (typeof process.argv[2] !== 'undefined' && process.argv[2] !== '--no-photos') {
         postPaths.push(process.argv[2]);
     } else {
         postPaths = directoriesIn('posts');
@@ -144,6 +147,6 @@ return (async () => {
         return new Date(b.date) - new Date(a.date);
     });
 
-    generatePages(posts);
+    generatePages(posts, fs.readFileSync('./build/app.css', 'utf8').trim());
 
 })();

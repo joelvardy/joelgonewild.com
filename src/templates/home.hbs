@@ -1,0 +1,44 @@
+{{#extend "layout"}}
+{{#content "content"}}
+<div class="container sidebar">
+
+    <section class="posts">
+        {{#each posts as |post i|}}
+        <article class="post">
+
+            <a class="hero-photo" href="/{{post.slug}}/">
+                <img alt="{{post.hero}}" src="/{{post.slug}}/{{post.hero}}-1600.jpg" />
+            </a>
+
+            <h2><a href="/{{post.slug}}/" title="Read full post">{{post.title}}</a></h2>
+            <p><strong>{{moment post.date "MMMM YYYY"}}</strong></p>
+
+            <div class="introduction">
+                {{post.intro}}
+            </div>
+
+        </article>
+        {{/each}}
+    </section>
+
+    <aside>
+
+        <div class="biography">
+            <a href="https://joelvardy.com/" title="Learn a little more about me"><img alt="Photo of Joel Vardy"
+                    src="/assets/joel-vardy.jpg"></a>
+            <p>I'm a software engineer, but I really enjoy exploring new places. I started writing up my trips when I
+                first went to Iceland in 2014, I've since written up some of the trips before that while I still
+                remember some of the details.</p>
+        </div>
+
+        <ul class="categories">
+            {{#each posts as |post i|}}
+            <li><a href="/{{post.slug}}/" title="View {{ post.title }} trip">{{ post.title }}</a></li>
+            {{/each}}
+        </ul>
+
+    </aside>
+
+</div>
+{{/content}}
+{{/extend}}

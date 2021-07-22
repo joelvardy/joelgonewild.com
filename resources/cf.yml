@@ -1,0 +1,73 @@
+Resources:
+  RedirectCloudfrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Comment: joelgonewild.com to www.joelgonewild.com
+        Origins:
+        - DomainName: !Join [ "", [ !Ref RedirectS3Bucket, ".s3-website.", "${self:provider.region}", ".amazonaws.com" ] ]
+          Id: RedirectS3Bucket
+          CustomOriginConfig:
+            HTTPPort: 80
+            OriginProtocolPolicy: http-only
+        Enabled: true
+        HttpVersion: http2
+        Aliases:
+        - joelgonewild.com
+        DefaultCacheBehavior:
+          AllowedMethods:
+          - GET
+          - HEAD
+          - OPTIONS
+          Compress: true
+          TargetOriginId: RedirectS3Bucket
+          ViewerProtocolPolicy: redirect-to-https
+          DefaultTTL: 900
+          MaxTTL: 900
+          MinTTL: 900
+          ForwardedValues:
+            Cookies:
+              Forward: none
+            QueryString: true
+        PriceClass: PriceClass_100
+        ViewerCertificate:
+          AcmCertificateArn: arn:aws:acm:us-east-1:527669730630:certificate/eacced7b-320f-4762-a96e-811b137881eb
+          SslSupportMethod: sni-only
+  CloudfrontDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Comment: ${self:custom.service}
+        Origins:
+        - DomainName: !Join [ "", [ !Ref WebsiteS3Bucket, ".s3-website.", "${self:provider.region}", ".amazonaws.com" ] ]
+          Id: S3WebsiteOrigin
+          CustomOriginConfig:
+            HTTPPort: 80
+            OriginProtocolPolicy: http-only
+        Enabled: true
+        HttpVersion: http2
+        Aliases:
+        - www.joelgonewild.com
+        DefaultCacheBehavior:
+          TargetOriginId: S3WebsiteOrigin
+          AllowedMethods:
+          - GET
+          - HEAD
+          - OPTIONS
+          Compress: true
+          DefaultTTL: 3600
+          MaxTTL: 3600
+          MinTTL: 3600
+          ForwardedValues:
+            Cookies:
+              Forward: none
+            QueryString: false
+          ViewerProtocolPolicy: redirect-to-https
+        PriceClass: PriceClass_100
+        ViewerCertificate:
+          AcmCertificateArn: arn:aws:acm:us-east-1:527669730630:certificate/eacced7b-320f-4762-a96e-811b137881eb
+          SslSupportMethod: sni-only
+
+Outputs:
+  CloudfrontDistributionId:
+    Value: !Ref CloudfrontDistribution

@@ -1,0 +1,15 @@
+service: joelgonewild-v1
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  service: ${self:service}-${self:custom.stage}
+
+provider:
+  name: aws
+  stage: main
+  region: eu-west-2
+
+resources:
+  - ${file(resources/s3.yml)}
+  - ${file(resources/cf.yml)}
+  - ${file(resources/r53.yml)}

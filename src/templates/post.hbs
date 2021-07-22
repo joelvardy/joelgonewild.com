@@ -1,0 +1,18 @@
+{{#extend "layout"}}
+{{#content "content"}}
+<div class="container">
+
+    <div class="post">
+
+        <img class="hero-photo" alt="{{post.hero}}" src="/{{post.slug}}/{{post.hero}}-1600.jpg" />
+
+        <h2>{{post.title}}</h2>
+        <p><strong>{{moment post.date "MMMM YYYY"}}</strong></p>
+
+        {{{post.html}}}
+
+    </div>
+
+</div>
+{{/content}}
+{{/extend}}

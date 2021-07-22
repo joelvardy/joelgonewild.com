@@ -1,0 +1,29 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with: 
+          node-version: 16
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-2
+      - name: Install dependencies
+        run: npm ci
+      - name: Build assets for deploy
+        run: npm run build
+      - name: Deploy infrastructure
+        run: |
+          OUTPUT=$(npm run deploy 2>&1)
+          WEBSITE_S3_BUCKET_NAME="$(awk -F"WebsiteS3BucketName: " '{sub(/ .*/,"",$2);print $2}' <<< $OUTPUT | xargs)"
+          CLOUDFRONT_DISTRIBUTION_ID="$(awk -F"CloudfrontDistributionId: " '{sub(/ .*/,"",$2);print $2}' <<< $OUTPUT | xargs)"
+          aws s3 sync ./public/. s3://$WEBSITE_S3_BUCKET_NAME --acl=public-read --delete
+          aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths=/*

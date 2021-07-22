@@ -1,0 +1,19 @@
+Resources:
+  WebsiteRoute53Cname:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneName: joelgonewild.com.
+      Name: joelgonewild.com
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt CloudfrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
+  WebsiteWwwRoute53Cname:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneName: joelgonewild.com.
+      Name: www.joelgonewild.com
+      Type: A
+      AliasTarget:
+        DNSName: !GetAtt CloudfrontDistribution.DomainName
+        HostedZoneId: Z2FDTNDATAQYW2
