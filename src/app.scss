@@ -27,7 +27,7 @@ body {
     }
 
     @media screen and (max-width: 600px) {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -96,6 +96,10 @@ div.container {
             overflow: hidden;
             padding: 3em;
 
+            @media screen and (max-width: 600px) {
+                padding: 1em;
+            }
+
             &:first-child {
                 margin-top: 0;
             }
@@ -103,6 +107,9 @@ div.container {
             .hero-photo {
                 display: block;
                 margin: -3em -3em 3em;
+                @media screen and (max-width: 600px) {
+                    margin: -1em -1em 1em;
+                }
                 img {
                     display: block;
                     width: 100%;
@@ -117,19 +124,6 @@ div.container {
         }
     }
 
-    section.category {
-        background: rgb(30, 30, 30);
-        border-radius: 3px;
-        color: rgb(245, 245, 245);
-        margin-bottom: 5%;
-        overflow: hidden;
-        padding: 3em;
-
-        h2 {
-            margin-bottom: 0.25em;
-        }
-    }
-
     div.post {
         background: rgb(245, 245, 245);
         border: 1px solid rgb(230, 230, 230);
@@ -138,6 +132,10 @@ div.container {
         overflow: hidden;
         padding: 3em;
 
+        @media screen and (max-width: 600px) {
+            padding: 1em;
+        }
+
         .hero-photo {
             display: block;
             margin: -3em -3em 3em;
@@ -145,6 +143,9 @@ div.container {
             max-width: none;
             height: 15em;
             object-fit: cover;
+            @media screen and (max-width: 600px) {
+                margin: -1em -1em 1em;
+            }
         }
 
         h3 {
