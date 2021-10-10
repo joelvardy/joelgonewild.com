@@ -104,3 +104,9 @@ The walk up Dun Caan was very pleasant with a little light rain at the start of 
 </div>
 
 Our final night was very pleasant, we had a three course meal at the distillery with some cocktails, and headed to bed. In the morning we packed our things and headed back to Edinburgh, stopping at Eilean Donan Castle as we passed to thank the staff and walk down the bridge one more time.
+
+One final photo of Rachel and I on the bridge at Eilean Donan Castle after our wedding ceremony.
+
+<div class="gallery">
+    <a href="/2021-skye-wedding/joel-and-rachel-on-the-bridge-at-eilean-donan-castle-2000.jpg"><img alt="Joel and Rachel on the bridge at Eilean Donan Castle" srcset="/2021-skye-wedding/joel-and-rachel-on-the-bridge-at-eilean-donan-castle-400.jpg, /2021-skye-wedding/joel-and-rachel-on-the-bridge-at-eilean-donan-castle-800.jpg 800w, /2021-skye-wedding/joel-and-rachel-on-the-bridge-at-eilean-donan-castle-1200.jpg 1200w, /2021-skye-wedding/joel-and-rachel-on-the-bridge-at-eilean-donan-castle-1600.jpg 1600w, /2021-skye-wedding/joel-and-rachel-on-the-bridge-at-eilean-donan-castle-2000.jpg 2000w" src="/2021-skye-wedding/joel-and-rachel-on-the-bridge-at-eilean-donan-castle-400.jpg"></a>
+</div>
