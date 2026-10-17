@@ -2,19 +2,21 @@ on:
   push:
     branches:
       - main
+permissions:
+  id-token: write
+  contents: read
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with: 
-          node-version: 16
+          node-version: 22
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v6
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: arn:aws:iam::527669730630:role/joelgonewild-github-deploy
           aws-region: eu-west-2
       - name: Install dependencies
         run: npm ci
@@ -25,5 +27,6 @@ jobs:
           OUTPUT=$(npm run deploy 2>&1)
           WEBSITE_S3_BUCKET_NAME="$(awk -F"WebsiteS3BucketName: " '{sub(/ .*/,"",$2);print $2}' <<< $OUTPUT | xargs)"
           CLOUDFRONT_DISTRIBUTION_ID="$(awk -F"CloudfrontDistributionId: " '{sub(/ .*/,"",$2);print $2}' <<< $OUTPUT | xargs)"
-          aws s3 sync ./public/. s3://$WEBSITE_S3_BUCKET_NAME --acl=public-read --delete
+          aws s3 sync ./public/. s3://$WEBSITE_S3_BUCKET_NAME --acl=public-read --delete --exclude "*.avif"
+          aws s3 sync ./public/. s3://$WEBSITE_S3_BUCKET_NAME --acl=public-read --delete --exclude "*" --include "*.avif" --content-type image/avif
           aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths=/*

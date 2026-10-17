@@ -1,0 +1,90 @@
+# Deployed once by hand, not by serverless.yml - the role it creates is what GitHub Actions uses to deploy that stack.
+# aws cloudformation deploy --region eu-west-2 --stack-name joelgonewild-github-deploy --template-file resources/github-deploy-role.yml --capabilities CAPABILITY_NAMED_IAM
+AWSTemplateFormatVersion: '2010-09-09'
+Description: GitHub Actions OIDC deploy role for joelgonewild.com
+
+Parameters:
+  Repository:
+    Type: String
+    Default: joelvardy/joelgonewild.com
+  StackName:
+    Type: String
+    Default: joelgonewild-v1-main
+  HostedZoneId:
+    Type: String
+    Default: Z2443T4LIGXKYO
+  CertificateArn:
+    Type: String
+    Default: arn:aws:acm:us-east-1:527669730630:certificate/eacced7b-320f-4762-a96e-811b137881eb
+
+Resources:
+  GitHubOidcProvider:
+    Type: AWS::IAM::OIDCProvider
+    Properties:
+      Url: https://token.actions.githubusercontent.com
+      ClientIdList:
+        - sts.amazonaws.com
+
+  DeployRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: joelgonewild-github-deploy
+      MaxSessionDuration: 3600
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: !Ref GitHubOidcProvider
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+                token.actions.githubusercontent.com:sub: !Sub repo:${Repository}:ref:refs/heads/main
+      Policies:
+        - PolicyName: deploy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: cloudformation:*
+                Resource: !Sub arn:aws:cloudformation:eu-west-2:${AWS::AccountId}:stack/${StackName}/*
+              - Effect: Allow
+                Action: cloudformation:ValidateTemplate
+                Resource: '*'
+              - Effect: Allow
+                Action: s3:*
+                Resource:
+                  - !Sub arn:aws:s3:::${StackName}-*
+                  - !Sub arn:aws:s3:::${StackName}-*/*
+              - Effect: Allow
+                Action:
+                  - cloudfront:GetDistribution
+                  - cloudfront:GetDistributionConfig
+                  - cloudfront:UpdateDistribution
+                  - cloudfront:CreateInvalidation
+                  - cloudfront:GetInvalidation
+                  - cloudfront:ListTagsForResource
+                  - cloudfront:TagResource
+                Resource:
+                  - !Sub arn:aws:cloudfront::${AWS::AccountId}:distribution/E1A44X81WDKTI3
+                  - !Sub arn:aws:cloudfront::${AWS::AccountId}:distribution/E25WS1HMNQ2GSS
+              - Effect: Allow
+                Action:
+                  - route53:GetHostedZone
+                  - route53:ListResourceRecordSets
+                  - route53:ChangeResourceRecordSets
+                Resource: !Sub arn:aws:route53:::hostedzone/${HostedZoneId}
+              - Effect: Allow
+                Action:
+                  - route53:GetChange
+                  - route53:ListHostedZones
+                  - route53:ListHostedZonesByName
+                Resource: '*'
+              - Effect: Allow
+                Action: acm:DescribeCertificate
+                Resource: !Ref CertificateArn
+
+Outputs:
+  DeployRoleArn:
+    Value: !GetAtt DeployRole.Arn
