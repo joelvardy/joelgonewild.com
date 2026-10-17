@@ -234,150 +234,56 @@ div.container {
     }
 }
 
+// process.js sets --ratio on each photo so it grows in proportion to its shape, which keeps every photo in a row the same height.
+// The ::before and ::after pseudo-elements are full-width line breaks, and `order` moves photos into the rows between them.
 .gallery {
-    overflow: hidden;
+    column-gap: 5%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before,
+    &::after {
+        content: '';
+        flex-basis: 100%;
+    }
+
+    &::before {
+        order: 1;
+    }
+
+    &::after {
+        order: 3;
+    }
 
     img {
         display: block;
-        min-width: 100%;
-    }
-
-    a:first-child:nth-last-child(1) {
         width: 100%;
     }
 
-    a:first-child:nth-last-child(2),
-    a:first-child:nth-last-child(2) ~ a,
-    a:first-child:nth-last-child(3),
-    a:first-child:nth-last-child(3) ~ a,
-    a:first-child:nth-last-child(4),
-    a:first-child:nth-last-child(4) ~ a,
-    a:first-child:nth-last-child(5),
-    a:first-child:nth-last-child(5) ~ a,
-    a:first-child:nth-last-child(6),
-    a:first-child:nth-last-child(6) ~ a {
+    a {
+        box-sizing: content-box;
+        flex: var(--ratio, 1) 1 0;
+        min-width: 0;
+    }
+
+    a:not(:only-child) {
         border: 1px solid rgb(220, 220, 220);
-        float: left;
-        margin-right: 5%;
         padding: 0.5%;
-
-        &:last-child {
-            margin-right: 0;
-        }
     }
 
-    a:first-child:nth-last-child(2),
-    a:first-child:nth-last-child(2) ~ a {
-        width: 47.5%;
+    a:first-child:nth-last-child(n + 5) ~ a:nth-child(n + 4) {
+        margin-top: 5%;
+        order: 2;
     }
 
-    a:first-child:nth-last-child(3),
-    a:first-child:nth-last-child(3) ~ a {
-        width: 30%;
-
-        @media screen and (max-width: 800px) {
-            width: 47.5%;
-
-            &:nth-child(2) {
-                margin-right: 0;
-            }
-
-            &:last-child {
-                margin-top: 5%;
-                width: 100%;
-            }
-        }
-    }
-
-    a:first-child:nth-last-child(4),
-    a:first-child:nth-last-child(4) ~ a {
-        width: 21.25%;
-
-        @media screen and (max-width: 800px) {
-            width: 47.5%;
-
-            &:nth-child(2) {
-                margin-right: 0;
-            }
-
-            &:nth-child(3),
-            &:last-child {
-                margin-top: 5%;
-            }
-        }
-    }
-
-    a:first-child:nth-last-child(5),
-    a:first-child:nth-last-child(5) ~ a {
-        width: 30%;
-
-        &:nth-child(3) {
-            margin-right: 0;
-        }
-
-        &:nth-child(4),
-        &:last-child {
+    @media screen and (max-width: 800px) {
+        a:first-child:nth-last-child(n + 3) ~ a:nth-child(n + 3) {
             margin-top: 5%;
-            width: 47.5%;
+            order: 2;
         }
 
-        @media screen and (max-width: 800px) {
-            width: 47.5%;
-
-            &:nth-child(3) {
-                margin-right: 5%;
-            }
-
-            &:nth-child(2),
-            &:nth-child(4) {
-                margin-right: 0;
-            }
-
-            &:nth-child(3),
-            &:nth-child(3),
-            &:last-child {
-                margin-top: 5%;
-            }
-
-            &:last-child {
-                width: 100%;
-            }
-        }
-    }
-
-    a:first-child:nth-last-child(6),
-    a:first-child:nth-last-child(6) ~ a {
-        width: 30%;
-
-        &:nth-child(3),
-        &:last-child {
-            margin-right: 0;
-        }
-
-        &:nth-child(4),
-        &:nth-child(5),
-        &:last-child {
-            margin-top: 5%;
-        }
-
-        @media screen and (max-width: 800px) {
-            width: 47.5%;
-
-            &:nth-child(3) {
-                margin-right: 5%;
-            }
-
-            &:nth-child(2),
-            &:nth-child(4) {
-                margin-right: 0;
-            }
-
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5),
-            &:last-child {
-                margin-top: 5%;
-            }
+        a:first-child:nth-last-child(n + 5) ~ a:nth-child(n + 5) {
+            order: 4;
         }
     }
 }

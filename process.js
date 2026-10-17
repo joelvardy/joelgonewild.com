@@ -61,8 +61,19 @@ const imagesIn = (rootPath) => {
     });
 };
 
-const processPost = (postMarkdownPath) => {
-    let postFile = fs.readFileSync(postMarkdownPath);
+// Galleries size each photo by its aspect ratio, so every photo in a row is the same height
+const addPhotoRatios = async (html, photosPath) => {
+    const links = [...new Set(html.match(/<a href="[^"]+-2000\.jpg">/g))];
+    for (let link of links) {
+        const name = link.match(/([^/]+)-2000\.jpg"/)[1];
+        const { width, height } = await sharp(path.join(photosPath, name + '.jpg')).metadata();
+        html = html.split(link).join(link.replace('>', ' style="--ratio: ' + (width / height).toFixed(4) + '">'));
+    }
+    return html;
+};
+
+const processPost = async (postPath) => {
+    let postFile = fs.readFileSync(path.join(postPath, 'post.md'));
     let post = markdownData.parse(postFile.toString());
     return {
         slug: makeSlug(post.data.meta.title),
@@ -70,7 +81,7 @@ const processPost = (postMarkdownPath) => {
         date: post.data.meta.date,
         hero: post.data.meta.hero,
         intro: post.data.meta.intro,
-        html: markdown.render(post.markdown),
+        html: await addPhotoRatios(markdown.render(post.markdown), path.join(postPath, 'photos')),
     };
 };
 
@@ -128,7 +139,7 @@ return (async () => {
 
     for (let postPath of postPaths) {
 
-        const post = processPost(path.join(postPath, 'post.md'));
+        const post = await processPost(postPath);
         const publicPostPath = path.join('public', post.slug);
         makeDirectoryExist(publicPostPath);
 
