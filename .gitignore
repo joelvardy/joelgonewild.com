@@ -1,6 +1,5 @@
 .serverless
 node_modules
-build
 public/*
 !public/assets/
 !public/error.html

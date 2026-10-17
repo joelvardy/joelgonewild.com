@@ -4,10 +4,13 @@
 
     <div class="post">
 
-        <img class="hero-photo" alt="{{post.hero}}" src="/{{post.slug}}/{{post.hero}}-1600.jpg" />
+        <picture>
+            <source type="image/avif" srcset="{{srcset post.slug post.hero "avif"}}" sizes="(max-width: 600px) 95vw, (max-width: 800px) 80vw, 70vw">
+            <img class="hero-photo" alt="{{post.heroAlt}}" src="/{{post.slug}}/{{post.hero}}-1600.jpg" srcset="{{srcset post.slug post.hero "jpg"}}" sizes="(max-width: 600px) 95vw, (max-width: 800px) 80vw, 70vw" fetchpriority="high">
+        </picture>
 
         <h2>{{post.title}}</h2>
-        <p><strong>{{moment post.date "MMMM YYYY"}}</strong></p>
+        <p><strong>{{date post.date}}</strong></p>
 
         {{{post.html}}}
 

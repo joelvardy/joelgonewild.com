@@ -52,6 +52,7 @@ a {
 }
 
 img {
+    height: auto;
     max-width: 100%;
 }
 
@@ -63,10 +64,11 @@ header {
         display: inline-block;
         text-decoration: none;
 
-        svg {
+        img {
             display: block;
             height: 10em;
             margin: 0 auto;
+            width: auto;
         }
     }
 }
@@ -240,6 +242,7 @@ div.container {
     column-gap: 5%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     &::before,
     &::after {
@@ -255,6 +258,7 @@ div.container {
         order: 3;
     }
 
+    picture,
     img {
         display: block;
         width: 100%;

@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "nodenext",
+        "target": "es2023",
+        "strict": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "types": ["node"]
+    },
+    "include": ["process.ts", "types.d.ts"]
+}

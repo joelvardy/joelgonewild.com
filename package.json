@@ -5,20 +5,24 @@
   "description": "Categorised blog posts from my trips.",
   "author": "Joel Vardy",
   "scripts": {
-    "build-css": "sass --no-source-map --style compressed ./src/app.scss ./build/app.css",
-    "build": "npm run build-css && node ./process.js",
+    "build": "tsx process.ts",
+    "dev": "tsx watch --include 'src/**' --include 'posts/**' process.ts & serve public",
+    "typecheck": "tsc --noEmit",
     "deploy": "./node_modules/serverless/bin/serverless.js deploy --verbose"
   },
   "devDependencies": {
-    "handlebars": "^4.7.7",
+    "@types/markdown-it": "^14.2.0",
+    "@types/node": "^22.20.5",
+    "handlebars": "^4.7.10",
     "handlebars-layouts": "^3.1.4",
-    "handlebars.moment": "^1.0.4",
     "markdown-data": "^0.7.0",
-    "markdown-it": "^12.1.0",
-    "moment": "^2.29.1",
-    "sass": "^1.35.2",
+    "markdown-it": "^14.3.3",
+    "sass": "^1.105.2",
+    "serve": "^14.2.6",
     "serverless": "^2.51.2",
-    "sharp": "^0.28.3",
-    "slugify": "^1.5.3"
+    "sharp": "^0.34.5",
+    "slugify": "^1.6.9",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   }
 }
