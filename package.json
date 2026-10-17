@@ -15,7 +15,6 @@
     "@types/node": "^22.20.5",
     "handlebars": "^4.7.10",
     "handlebars-layouts": "^3.1.4",
-    "markdown-data": "^0.7.0",
     "markdown-it": "^14.3.3",
     "sass": "^1.105.2",
     "serve": "^14.2.6",

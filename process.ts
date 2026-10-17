@@ -2,7 +2,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
 import slugify from 'slugify';
-import markdownData from 'markdown-data';
 import MarkdownIt from 'markdown-it';
 import sharp from 'sharp';
 import handlebars from 'handlebars';
@@ -146,17 +145,31 @@ const renderPhotos = async (html: string, photosPath: string) => {
         });
 };
 
+// Posts start with a <!--moml:meta ... --> block of `Key: value` lines
+const parsePost = (postMarkdownPath: string) => {
+    const source = fs.readFileSync(postMarkdownPath, 'utf8');
+    const block = source.match(/^<!--moml:meta\n([\s\S]*?)\n-->\n/);
+    if (!block) {
+        throw new Error('No meta block in ' + postMarkdownPath);
+    }
+    const meta: Record<string, string> = {};
+    for (const line of block[1].split('\n')) {
+        const separator = line.indexOf(':');
+        meta[line.slice(0, separator).trim().toLowerCase()] = line.slice(separator + 1).trim();
+    }
+    return { meta, markdown: source.slice(block[0].length).trim() };
+};
+
 const processPost = async (postPath: string): Promise<Post> => {
-    const post = markdownData.parse(fs.readFileSync(path.join(postPath, 'post.md'), 'utf8'));
-    const meta = post.data.meta;
+    const { meta, markdown: postMarkdown } = parsePost(path.join(postPath, 'post.md'));
     return {
         slug: makeSlug(meta.title),
         title: meta.title,
-        date: meta.date,
+        date: new Date(meta.date + 'T00:00:00Z'),
         hero: meta.hero,
         heroAlt: meta.heroalt ?? meta.title,
         intro: meta.intro,
-        html: await renderPhotos(markdown.render(post.markdown), path.join(postPath, 'photos')),
+        html: await renderPhotos(markdown.render(postMarkdown), path.join(postPath, 'photos')),
     };
 };
 
