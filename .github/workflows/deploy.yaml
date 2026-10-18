@@ -16,19 +16,7 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      # Falls back to the most recent cache, the build's image manifest then only regenerates new or changed photos
-      - name: Restore resized images
-        uses: actions/cache@v6
-        with:
-          path: |
-            public/*/*.jpg
-            public/*/*.avif
-            .image-manifest.json
-          key: images-${{ hashFiles('posts/**/photos/*.jpg', 'process.ts') }}
-          restore-keys: images-
-      - name: Build
-        run: npm run build
-      # After the build, so a long image build can't use up the session before the upload finishes
+      # Long enough for a full image build plus the upload
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v6
         with:
@@ -37,14 +25,25 @@ jobs:
           aws-region: eu-west-2
       - name: Deploy infrastructure
         run: npm run deploy
-      - name: Upload site
+      - name: Find deploy targets
         run: |
           stack_output() {
             aws cloudformation describe-stacks --stack-name joelgonewild-v1-main --query "Stacks[0].Outputs[?OutputKey=='$1'].OutputValue" --output text
           }
-          BUCKET="$(stack_output WebsiteS3BucketName)"
-          DISTRIBUTION="$(stack_output CloudfrontDistributionId)"
-          aws s3 sync ./public/. s3://$BUCKET --delete --exclude "*.jpg" --exclude "*.avif" --cache-control "public, max-age=300"
+          echo "BUCKET=$(stack_output WebsiteS3BucketName)" >> "$GITHUB_ENV"
+          echo "DISTRIBUTION=$(stack_output CloudfrontDistributionId)" >> "$GITHUB_ENV"
+      # The bucket already holds every resized image, so with its manifest the build only regenerates new or changed photos
+      - name: Restore resized images
+        run: |
+          aws s3 sync s3://$BUCKET public/ --exclude "*" --include "*.jpg" --include "*.avif" --exclude "assets/*" --only-show-errors
+          aws s3 cp s3://$BUCKET/.image-manifest.json .image-manifest.json --only-show-errors || echo "No image manifest yet, regenerating every image"
+      - name: Build
+        run: npm run build
+      # The manifest goes up last, so it never lists images that failed to upload
+      - name: Upload site
+        run: |
+          aws s3 sync ./public/. s3://$BUCKET --delete --exclude "*.jpg" --exclude "*.avif" --exclude ".image-manifest.json" --cache-control "public, max-age=300"
           aws s3 sync ./public/. s3://$BUCKET --delete --exclude "*" --include "*.jpg" --cache-control "public, max-age=604800"
           aws s3 sync ./public/. s3://$BUCKET --delete --exclude "*" --include "*.avif" --content-type image/avif --cache-control "public, max-age=604800"
+          aws s3 cp .image-manifest.json s3://$BUCKET/.image-manifest.json --cache-control no-store
           aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --paths "/*"

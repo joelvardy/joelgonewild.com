@@ -28,7 +28,7 @@ Photos are only resized when the photo or the image settings in `process.ts` cha
 
 ## Deploying
 
-Pushing to `main` deploys via GitHub Actions, which assumes the `joelgonewild-github-deploy` IAM role over OIDC. It deploys `resources/site.yml` (a no-op when unchanged), then syncs `public/` to S3 and invalidates CloudFront.
+Pushing to `main` deploys via GitHub Actions, which assumes the `joelgonewild-github-deploy` IAM role over OIDC. It deploys `resources/site.yml` (a no-op when unchanged), restores the resized images and `.image-manifest.json` from the website bucket, builds, then syncs `public/` back to S3 and invalidates CloudFront.
 
 The role itself lives in `resources/github-deploy-role.yml` and is deployed by hand, see the command at the top of that file.
 
