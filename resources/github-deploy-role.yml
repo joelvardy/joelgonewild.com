@@ -29,7 +29,7 @@ Resources:
     Type: AWS::IAM::Role
     Properties:
       RoleName: joelgonewild-github-deploy
-      MaxSessionDuration: 3600
+      MaxSessionDuration: 7200
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
         Statement:
@@ -48,7 +48,9 @@ Resources:
             Statement:
               - Effect: Allow
                 Action: cloudformation:*
-                Resource: !Sub arn:aws:cloudformation:eu-west-2:${AWS::AccountId}:stack/${StackName}/*
+                Resource:
+                  - !Sub arn:aws:cloudformation:eu-west-2:${AWS::AccountId}:stack/${StackName}/*
+                  - !Sub arn:aws:cloudformation:eu-west-2:${AWS::AccountId}:changeSet/awscli-cloudformation-package-deploy-*
               - Effect: Allow
                 Action: cloudformation:ValidateTemplate
                 Resource: '*'
@@ -69,6 +71,26 @@ Resources:
                 Resource:
                   - !Sub arn:aws:cloudfront::${AWS::AccountId}:distribution/E1A44X81WDKTI3
                   - !Sub arn:aws:cloudfront::${AWS::AccountId}:distribution/E25WS1HMNQ2GSS
+              - Effect: Allow
+                Action:
+                  - cloudfront:CreateFunction
+                  - cloudfront:DescribeFunction
+                  - cloudfront:GetFunction
+                  - cloudfront:UpdateFunction
+                  - cloudfront:PublishFunction
+                  - cloudfront:DeleteFunction
+                Resource: !Sub arn:aws:cloudfront::${AWS::AccountId}:function/${StackName}-*
+              - Effect: Allow
+                Action:
+                  - cloudfront:CreateOriginAccessControl
+                  - cloudfront:GetOriginAccessControl
+                  - cloudfront:GetOriginAccessControlConfig
+                  - cloudfront:UpdateOriginAccessControl
+                  - cloudfront:DeleteOriginAccessControl
+                  - cloudfront:GetCachePolicy
+                  - cloudfront:GetOriginRequestPolicy
+                  - cloudfront:GetResponseHeadersPolicy
+                Resource: '*'
               - Effect: Allow
                 Action:
                   - route53:GetHostedZone

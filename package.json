@@ -8,7 +8,7 @@
     "build": "tsx process.ts",
     "dev": "tsx watch --include 'src/**' --include 'posts/**' process.ts & serve public",
     "typecheck": "tsc --noEmit",
-    "deploy": "./node_modules/serverless/bin/serverless.js deploy --verbose"
+    "deploy": "aws cloudformation deploy --region eu-west-2 --stack-name joelgonewild-v1-main --template-file resources/site.yml --no-fail-on-empty-changeset"
   },
   "devDependencies": {
     "@types/markdown-it": "^14.2.0",
@@ -18,7 +18,6 @@
     "markdown-it": "^14.3.3",
     "sass": "^1.105.2",
     "serve": "^14.2.6",
-    "serverless": "^2.51.2",
     "sharp": "^0.34.5",
     "slugify": "^1.6.9",
     "tsx": "^4.23.15",

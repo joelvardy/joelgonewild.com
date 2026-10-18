@@ -11,22 +11,40 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
-        with: 
+        with:
           node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      # Falls back to the most recent cache, the build's image manifest then only regenerates new or changed photos
+      - name: Restore resized images
+        uses: actions/cache@v6
+        with:
+          path: |
+            public/*/*.jpg
+            public/*/*.avif
+            .image-manifest.json
+          key: images-${{ hashFiles('posts/**/photos/*.jpg', 'process.ts') }}
+          restore-keys: images-
+      - name: Build
+        run: npm run build
+      # After the build, so a long image build can't use up the session before the upload finishes
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v6
         with:
           role-to-assume: arn:aws:iam::527669730630:role/joelgonewild-github-deploy
+          role-duration-seconds: 7200
           aws-region: eu-west-2
-      - name: Install dependencies
-        run: npm ci
-      - name: Build assets for deploy
-        run: npm run build
       - name: Deploy infrastructure
+        run: npm run deploy
+      - name: Upload site
         run: |
-          OUTPUT=$(npm run deploy 2>&1)
-          WEBSITE_S3_BUCKET_NAME="$(awk -F"WebsiteS3BucketName: " '{sub(/ .*/,"",$2);print $2}' <<< $OUTPUT | xargs)"
-          CLOUDFRONT_DISTRIBUTION_ID="$(awk -F"CloudfrontDistributionId: " '{sub(/ .*/,"",$2);print $2}' <<< $OUTPUT | xargs)"
-          aws s3 sync ./public/. s3://$WEBSITE_S3_BUCKET_NAME --acl=public-read --delete --exclude "*.avif"
-          aws s3 sync ./public/. s3://$WEBSITE_S3_BUCKET_NAME --acl=public-read --delete --exclude "*" --include "*.avif" --content-type image/avif
-          aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths=/*
+          stack_output() {
+            aws cloudformation describe-stacks --stack-name joelgonewild-v1-main --query "Stacks[0].Outputs[?OutputKey=='$1'].OutputValue" --output text
+          }
+          BUCKET="$(stack_output WebsiteS3BucketName)"
+          DISTRIBUTION="$(stack_output CloudfrontDistributionId)"
+          aws s3 sync ./public/. s3://$BUCKET --delete --exclude "*.jpg" --exclude "*.avif" --cache-control "public, max-age=300"
+          aws s3 sync ./public/. s3://$BUCKET --delete --exclude "*" --include "*.jpg" --cache-control "public, max-age=604800"
+          aws s3 sync ./public/. s3://$BUCKET --delete --exclude "*" --include "*.avif" --content-type image/avif --cache-control "public, max-age=604800"
+          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION --paths "/*"
