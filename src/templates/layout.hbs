@@ -18,6 +18,8 @@
         <meta name="twitter:description" content="{{description}}">
         <meta name="twitter:creator" content="@joelvardy">
         <meta name="twitter:image" content="{{image}}">
+        <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+        <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
         <link rel="canonical" href="https://www.joelgonewild.com{{path}}">
         <link rel="alternate" type="application/rss+xml" title="Joel Gone Wild" href="/feed.xml">
         <style>{{{css}}}</style>
@@ -31,7 +33,9 @@
                 </a>
             </header>
 
-            {{#block "content"}}{{/block}}
+            <main>
+                {{#block "content"}}{{/block}}
+            </main>
 
         </div>
     </body>

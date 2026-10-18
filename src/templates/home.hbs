@@ -27,8 +27,12 @@
     <aside>
 
         <div class="biography">
-            <a href="https://joelvardy.com/" title="Learn a little more about me"><img alt="Photo of Joel Vardy"
-                    src="/assets/joel-vardy.jpg"></a>
+            <a href="https://joelvardy.com/" title="Learn a little more about me"><picture>
+                    <source type="image/avif" srcset="/assets/joel-vardy-400.avif 400w, /assets/joel-vardy-1000.avif 1000w"
+                        sizes="(max-width: 600px) 95vw, (max-width: 800px) 80vw, (max-width: 1000px) 70vw, 18vw">
+                    <img alt="Photo of Joel Vardy" src="/assets/joel-vardy.jpg" width="1000" height="1000" loading="lazy"
+                        decoding="async">
+                </picture></a>
             <p>I'm a software engineer, but I really enjoy exploring new places. I started writing up my trips when I
                 first went to Iceland in 2014, I've since written up some of the trips before that while I still
                 remember some of the details. I'm <a href="https://www.instagram.com/joelvardy_/"
