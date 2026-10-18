@@ -1,4 +1,4 @@
-# Deployed once by hand, not by serverless.yml - the role it creates is what GitHub Actions uses to deploy that stack.
+# Deployed by hand, not by CI - the role it creates is what GitHub Actions uses to deploy resources/site.yml.
 # aws cloudformation deploy --region eu-west-2 --stack-name joelgonewild-github-deploy --template-file resources/github-deploy-role.yml --capabilities CAPABILITY_NAMED_IAM
 AWSTemplateFormatVersion: '2010-09-09'
 Description: GitHub Actions OIDC deploy role for joelgonewild.com
