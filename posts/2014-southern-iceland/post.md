@@ -11,9 +11,9 @@ The trip to Iceland has been discussed since October 2013, with myself being inv
 
 I was looking forward to packing well before we left for Iceland, but some last minute freelance work put stop to that. Here I am at 8pm, six hours before we leave, having just finished packing.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/top-down-2000.jpg"><img alt="Top Down" srcset="/2014-southern-iceland/top-down-400.jpg, /2014-southern-iceland/top-down-800.jpg 800w, /2014-southern-iceland/top-down-1200.jpg 1200w, /2014-southern-iceland/top-down-1600.jpg 1600w, /2014-southern-iceland/top-down-2000.jpg 2000w" src="/2014-southern-iceland/top-down-400.jpg"></a>
-</div>
+::: gallery
+top-down | Top Down
+:::
 
 If you know me, you won't be surprised by the amount of photography, and computer equipment. As usual boxers and socks take up a surprising amount of space. Below is my full kit list:
 
@@ -36,9 +36,9 @@ If you know me, you won't be surprised by the amount of photography, and compute
 	<li>Walking boots + casual trainers</li>
 </ul>
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/packed-2000.jpg"><img alt="Packed" srcset="/2014-southern-iceland/packed-400.jpg, /2014-southern-iceland/packed-800.jpg 800w, /2014-southern-iceland/packed-1200.jpg 1200w, /2014-southern-iceland/packed-1600.jpg 1600w, /2014-southern-iceland/packed-2000.jpg 2000w" src="/2014-southern-iceland/packed-400.jpg"></a>
-</div>
+::: gallery
+packed | Packed
+:::
 
 ## Mundane
 
@@ -50,22 +50,22 @@ A three hour flight and we have arrived in Iceland, today is just an acclimatisa
 
 For some reason, a lack of sleep doesn't effect me as much as some people (maybe it's all those late nights programming) - I decide I'm going to explore the local area, naturally I drag Jenny along too :)
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/mushroom-2000.jpg"><img alt="Mushroom" srcset="/2014-southern-iceland/mushroom-400.jpg, /2014-southern-iceland/mushroom-800.jpg 800w, /2014-southern-iceland/mushroom-1200.jpg 1200w, /2014-southern-iceland/mushroom-1600.jpg 1600w, /2014-southern-iceland/mushroom-2000.jpg 2000w" src="/2014-southern-iceland/mushroom-400.jpg"></a>
-    <a href="/2014-southern-iceland/rocks-2000.jpg"><img alt="Rocks" srcset="/2014-southern-iceland/rocks-400.jpg, /2014-southern-iceland/rocks-800.jpg 800w, /2014-southern-iceland/rocks-1200.jpg 1200w, /2014-southern-iceland/rocks-1600.jpg 1600w, /2014-southern-iceland/rocks-2000.jpg 2000w" src="/2014-southern-iceland/rocks-400.jpg"></a>
-</div>
+::: gallery
+mushroom | Mushroom
+rocks | Rocks
+:::
 
 On the plane over I was reading <a href="http://philhart.com/shooting-stars" title="Shooting Stars by Phil Hart">Shooting Stars by Phil Hart</a>, and all day I have been hoping for a clear night so I could put some of the things I had read about into practice. So when it was getting dark, and I saw it was clear I grabbed the camera, tripod, and started shooting some photos, I'm pretty happy of this one:
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/star-trails-2000.jpg"><img alt="Star Trails" srcset="/2014-southern-iceland/star-trails-400.jpg, /2014-southern-iceland/star-trails-800.jpg 800w, /2014-southern-iceland/star-trails-1200.jpg 1200w, /2014-southern-iceland/star-trails-1600.jpg 1600w, /2014-southern-iceland/star-trails-2000.jpg 2000w" src="/2014-southern-iceland/star-trails-400.jpg"></a>
-</div>
+::: gallery
+star-trails | Star Trails
+:::
 
 But I was even happier when Tanya saw some green wisps in the sky, and there, on the first night, was the aurora borealis. Unfortunatly it was bearly visible with the naked eye and required a long exposure to take a photo of it, but this is why I brought that heavy tripod :D
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/aurora-borealis-2000.jpg"><img alt="Aurora Borealis" srcset="/2014-southern-iceland/aurora-borealis-400.jpg, /2014-southern-iceland/aurora-borealis-800.jpg 800w, /2014-southern-iceland/aurora-borealis-1200.jpg 1200w, /2014-southern-iceland/aurora-borealis-1600.jpg 1600w, /2014-southern-iceland/aurora-borealis-2000.jpg 2000w" src="/2014-southern-iceland/aurora-borealis-400.jpg"></a>
-</div>
+::: gallery
+aurora-borealis | Aurora Borealis
+:::
 
 ## Natural Waters
 
@@ -73,23 +73,23 @@ This morning we headed out to <strong>Strokkur Geyser</strong>, the geyser is fo
 
 After taking some photos, we all stood around at the point closest to the geyser, it went off, however it was quite small, and we didn't get wet, that lulled me and Steve into a false sense of security, as it went off a few moments later, Jenny and Tanya moved away, while myself and Steve got soaked as the water returned to earth.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/strokkur-geyser-blue-2000.jpg"><img alt="Strokkur Geyser Blue" srcset="/2014-southern-iceland/strokkur-geyser-blue-400.jpg, /2014-southern-iceland/strokkur-geyser-blue-800.jpg 800w, /2014-southern-iceland/strokkur-geyser-blue-1200.jpg 1200w, /2014-southern-iceland/strokkur-geyser-blue-1600.jpg 1600w, /2014-southern-iceland/strokkur-geyser-blue-2000.jpg 2000w" src="/2014-southern-iceland/strokkur-geyser-blue-400.jpg"></a>
-    <a href="/2014-southern-iceland/valley-2000.jpg"><img alt="Valley" srcset="/2014-southern-iceland/valley-400.jpg, /2014-southern-iceland/valley-800.jpg 800w, /2014-southern-iceland/valley-1200.jpg 1200w, /2014-southern-iceland/valley-1600.jpg 1600w, /2014-southern-iceland/valley-2000.jpg 2000w" src="/2014-southern-iceland/valley-400.jpg"></a>
-</div>
+::: gallery
+strokkur-geyser-blue | Strokkur Geyser Blue
+valley | Valley
+:::
 
 At thirty-one meters high the <strong>Gullfoss Waterfall</strong> is a sight to behold, consisting of two waterfalls one eleven meters high, and the second twenty meters. The average water flow is one-hundred and nine cubic meters per second, however at times this can be two-thousand cubic meters per second.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/gulfoss-waterfall-2000.jpg"><img alt="Gulfoss Waterfall" srcset="/2014-southern-iceland/gulfoss-waterfall-400.jpg, /2014-southern-iceland/gulfoss-waterfall-800.jpg 800w, /2014-southern-iceland/gulfoss-waterfall-1200.jpg 1200w, /2014-southern-iceland/gulfoss-waterfall-1600.jpg 1600w, /2014-southern-iceland/gulfoss-waterfall-2000.jpg 2000w" src="/2014-southern-iceland/gulfoss-waterfall-400.jpg"></a>
-</div>
+::: gallery
+gulfoss-waterfall | Gulfoss Waterfall
+:::
 
 After arriving back at the cabin we had a lovely dinner cooked by Tanya, followed by watching Despicable Me in the hot tub, and a few quick photos of the sky before bed.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/hot-tub-2000.jpg"><img alt="Hot Tub" srcset="/2014-southern-iceland/hot-tub-400.jpg, /2014-southern-iceland/hot-tub-800.jpg 800w, /2014-southern-iceland/hot-tub-1200.jpg 1200w, /2014-southern-iceland/hot-tub-1600.jpg 1600w, /2014-southern-iceland/hot-tub-2000.jpg 2000w" src="/2014-southern-iceland/hot-tub-400.jpg"></a>
-    <a href="/2014-southern-iceland/sky-2000.jpg"><img alt="Sky" srcset="/2014-southern-iceland/sky-400.jpg, /2014-southern-iceland/sky-800.jpg 800w, /2014-southern-iceland/sky-1200.jpg 1200w, /2014-southern-iceland/sky-1600.jpg 1600w, /2014-southern-iceland/sky-2000.jpg 2000w" src="/2014-southern-iceland/sky-400.jpg"></a>
-</div>
+::: gallery
+hot-tub | Hot Tub
+sky | Sky
+:::
 
 ## Rafting
 
@@ -101,15 +101,15 @@ The river we were rafting down is fed by the <a href="/iceland/natural-waters" t
 
 We then visited Kerio, a 55 meter deep crater formed 6,500 years ago which we walked down into. The bottom of the crater is below the water table, causing the water level to fluctuate with the water table.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/kerio-crater-2000.jpg"><img alt="Kerio Crater" srcset="/2014-southern-iceland/kerio-crater-400.jpg, /2014-southern-iceland/kerio-crater-800.jpg 800w, /2014-southern-iceland/kerio-crater-1200.jpg 1200w, /2014-southern-iceland/kerio-crater-1600.jpg 1600w, /2014-southern-iceland/kerio-crater-2000.jpg 2000w" src="/2014-southern-iceland/kerio-crater-400.jpg"></a>
-</div>
+::: gallery
+kerio-crater | Kerio Crater
+:::
 
 On the way back towards Reykjavik the weather (as it had been in the morning) was not very pleasant, although it made for a nice view of the surrounding hills.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/roadside-fog-2000.jpg"><img alt="Roadside Fog" srcset="/2014-southern-iceland/roadside-fog-400.jpg, /2014-southern-iceland/roadside-fog-800.jpg 800w, /2014-southern-iceland/roadside-fog-1200.jpg 1200w, /2014-southern-iceland/roadside-fog-1600.jpg 1600w, /2014-southern-iceland/roadside-fog-2000.jpg 2000w" src="/2014-southern-iceland/roadside-fog-400.jpg"></a>
-</div>
+::: gallery
+roadside-fog | Roadside Fog
+:::
 
 ## Quad Biking
 
@@ -121,37 +121,37 @@ I made sure to get up with my alarm straight away this morning, setting off on 2
 
 We then had a walk around Reykjavik, took some photos of the Sun Voyager, a steel sculpture which appears to resemble a Viking ship, but is actually a dream boat and ode to the sun. We had lunch before heading back to the cabin, we need to be well rested for what's in store tomorrow&hellip;
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/sun-voyager-2000.jpg"><img alt="Sun Voyager" srcset="/2014-southern-iceland/sun-voyager-400.jpg, /2014-southern-iceland/sun-voyager-800.jpg 800w, /2014-southern-iceland/sun-voyager-1200.jpg 1200w, /2014-southern-iceland/sun-voyager-1600.jpg 1600w, /2014-southern-iceland/sun-voyager-2000.jpg 2000w" src="/2014-southern-iceland/sun-voyager-400.jpg"></a>
-    <a href="/2014-southern-iceland/waffles-2000.jpg"><img alt="Waffles" srcset="/2014-southern-iceland/waffles-400.jpg, /2014-southern-iceland/waffles-800.jpg 800w, /2014-southern-iceland/waffles-1200.jpg 1200w, /2014-southern-iceland/waffles-1600.jpg 1600w, /2014-southern-iceland/waffles-2000.jpg 2000w" src="/2014-southern-iceland/waffles-400.jpg"></a>
-</div>
+::: gallery
+sun-voyager | Sun Voyager
+waffles | Waffles
+:::
 
 ## Busy day of Epicness
 
 It's been a very long day, we left our cabin at 04:30 heading to Skaftafell National Park where we took part in a guided glacier walk, on the Falljokull glacier, our guide, Dan, was a very charismatic guy, who after allowing us to get used to walking in crampons took us up part of the glacier. After two hours we headed back to the base camp, squeezing in a small abseil down part of the icepack.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/falljokull-glacier-walking-2000.jpg"><img alt="Falljokull Glacier Walking" srcset="/2014-southern-iceland/falljokull-glacier-walking-400.jpg, /2014-southern-iceland/falljokull-glacier-walking-800.jpg 800w, /2014-southern-iceland/falljokull-glacier-walking-1200.jpg 1200w, /2014-southern-iceland/falljokull-glacier-walking-1600.jpg 1600w, /2014-southern-iceland/falljokull-glacier-walking-2000.jpg 2000w" src="/2014-southern-iceland/falljokull-glacier-walking-400.jpg"></a>
-    <a href="/2014-southern-iceland/falljokull-glacier-ice-2000.jpg"><img alt="Falljokull Glacier Ice" srcset="/2014-southern-iceland/falljokull-glacier-ice-400.jpg, /2014-southern-iceland/falljokull-glacier-ice-800.jpg 800w, /2014-southern-iceland/falljokull-glacier-ice-1200.jpg 1200w, /2014-southern-iceland/falljokull-glacier-ice-1600.jpg 1600w, /2014-southern-iceland/falljokull-glacier-ice-2000.jpg 2000w" src="/2014-southern-iceland/falljokull-glacier-ice-400.jpg"></a>
-</div>
+::: gallery
+falljokull-glacier-walking | Falljokull Glacier Walking
+falljokull-glacier-ice | Falljokull Glacier Ice
+:::
 
 We then headed to the Black Sand Beach where we climbed around, and even jumped off, some basalt columns, after which we walked along the beach taking in the awesome power of the waves.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/black-sand-beach-waves-2000.jpg"><img alt="Black Sand Beach Waves" srcset="/2014-southern-iceland/black-sand-beach-waves-400.jpg, /2014-southern-iceland/black-sand-beach-waves-800.jpg 800w, /2014-southern-iceland/black-sand-beach-waves-1200.jpg 1200w, /2014-southern-iceland/black-sand-beach-waves-1600.jpg 1600w, /2014-southern-iceland/black-sand-beach-waves-2000.jpg 2000w" src="/2014-southern-iceland/black-sand-beach-waves-400.jpg"></a>
-</div>
+::: gallery
+black-sand-beach-waves | Black Sand Beach Waves
+:::
 
 From there we walked (a long, boring, 4km each way, walk) to the abandoned DC3 which crash landed slightly further down the Black Sand Beach, on the South coast of Iceland.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/abandoned-dc3-2000.jpg"><img alt="Abandoned Dc3" srcset="/2014-southern-iceland/abandoned-dc3-400.jpg, /2014-southern-iceland/abandoned-dc3-800.jpg 800w, /2014-southern-iceland/abandoned-dc3-1200.jpg 1200w, /2014-southern-iceland/abandoned-dc3-1600.jpg 1600w, /2014-southern-iceland/abandoned-dc3-2000.jpg 2000w" src="/2014-southern-iceland/abandoned-dc3-400.jpg"></a>
-</div>
+::: gallery
+abandoned-dc3 | Abandoned Dc3
+:::
 
 Finally heading to Seljalandfoss Waterfall shortly after sunset.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/seljalandfoss-waterfall-2000.jpg"><img alt="Seljalandfoss Waterfall" srcset="/2014-southern-iceland/seljalandfoss-waterfall-400.jpg, /2014-southern-iceland/seljalandfoss-waterfall-800.jpg 800w, /2014-southern-iceland/seljalandfoss-waterfall-1200.jpg 1200w, /2014-southern-iceland/seljalandfoss-waterfall-1600.jpg 1600w, /2014-southern-iceland/seljalandfoss-waterfall-2000.jpg 2000w" src="/2014-southern-iceland/seljalandfoss-waterfall-400.jpg"></a>
-</div>
+::: gallery
+seljalandfoss-waterfall | Seljalandfoss Waterfall
+:::
 
 A very action packed day, and Tanya's birthday. Tomorrow it's time to relax!
 
@@ -163,12 +163,12 @@ We started out in the lagoon, having a walk / swim around, moving between areas 
 
 Following our relaxing time in the pool we ate an outstanding three-course meal at the <strong>LAVA Restaurant</strong> within the complex.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/joel-jenny-2000.jpg"><img alt="Joel Jenny" srcset="/2014-southern-iceland/joel-jenny-400.jpg, /2014-southern-iceland/joel-jenny-800.jpg 800w, /2014-southern-iceland/joel-jenny-1200.jpg 1200w, /2014-southern-iceland/joel-jenny-1600.jpg 1600w, /2014-southern-iceland/joel-jenny-2000.jpg 2000w" src="/2014-southern-iceland/joel-jenny-400.jpg"></a>
-    <a href="/2014-southern-iceland/jenny-steve-joel-2000.jpg"><img alt="Jenny Steve Joel" srcset="/2014-southern-iceland/jenny-steve-joel-400.jpg, /2014-southern-iceland/jenny-steve-joel-800.jpg 800w, /2014-southern-iceland/jenny-steve-joel-1200.jpg 1200w, /2014-southern-iceland/jenny-steve-joel-1600.jpg 1600w, /2014-southern-iceland/jenny-steve-joel-2000.jpg 2000w" src="/2014-southern-iceland/jenny-steve-joel-400.jpg"></a>
-    <a href="/2014-southern-iceland/joel-1-2000.jpg"><img alt="Joel 1" srcset="/2014-southern-iceland/joel-1-400.jpg, /2014-southern-iceland/joel-1-800.jpg 800w, /2014-southern-iceland/joel-1-1200.jpg 1200w, /2014-southern-iceland/joel-1-1600.jpg 1600w, /2014-southern-iceland/joel-1-2000.jpg 2000w" src="/2014-southern-iceland/joel-1-400.jpg"></a>
-    <a href="/2014-southern-iceland/lava-restaurant-beef-2000.jpg"><img alt="Lava Restaurant Beef" srcset="/2014-southern-iceland/lava-restaurant-beef-400.jpg, /2014-southern-iceland/lava-restaurant-beef-800.jpg 800w, /2014-southern-iceland/lava-restaurant-beef-1200.jpg 1200w, /2014-southern-iceland/lava-restaurant-beef-1600.jpg 1600w, /2014-southern-iceland/lava-restaurant-beef-2000.jpg 2000w" src="/2014-southern-iceland/lava-restaurant-beef-400.jpg"></a>
-</div>
+::: gallery
+joel-jenny | Joel Jenny
+jenny-steve-joel | Jenny Steve Joel
+joel-1 | Joel 1
+lava-restaurant-beef | Lava Restaurant Beef
+:::
 
 After arriving back at the cabin, we had some birthday Bollinger for Tanyas birthday and planned tomorrows activities&hellip;
 
@@ -178,17 +178,17 @@ This morning we chilled out a little, went to the shop and bought some food for 
 
 Thingvellir was the site of the ancient Icelandic parliament, a beautiful area, most striking of all are the faults between the Eurasian and North American tectonic plates which scar the landscape. Many of these are filled with surprisingly clear, blue water.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/deep-water-2000.jpg"><img alt="Deep Water" srcset="/2014-southern-iceland/deep-water-400.jpg, /2014-southern-iceland/deep-water-800.jpg 800w, /2014-southern-iceland/deep-water-1200.jpg 1200w, /2014-southern-iceland/deep-water-1600.jpg 1600w, /2014-southern-iceland/deep-water-2000.jpg 2000w" src="/2014-southern-iceland/deep-water-400.jpg"></a>
-    <a href="/2014-southern-iceland/joel-2-2000.jpg"><img alt="Joel 2" srcset="/2014-southern-iceland/joel-2-400.jpg, /2014-southern-iceland/joel-2-800.jpg 800w, /2014-southern-iceland/joel-2-1200.jpg 1200w, /2014-southern-iceland/joel-2-1600.jpg 1600w, /2014-southern-iceland/joel-2-2000.jpg 2000w" src="/2014-southern-iceland/joel-2-400.jpg"></a>
-    <a href="/2014-southern-iceland/reflection-2000.jpg"><img alt="Reflection" srcset="/2014-southern-iceland/reflection-400.jpg, /2014-southern-iceland/reflection-800.jpg 800w, /2014-southern-iceland/reflection-1200.jpg 1200w, /2014-southern-iceland/reflection-1600.jpg 1600w, /2014-southern-iceland/reflection-2000.jpg 2000w" src="/2014-southern-iceland/reflection-400.jpg"></a>
-</div>
+::: gallery
+deep-water | Deep Water
+joel-2 | Joel 2
+reflection | Reflection
+:::
 
 The beautiful area of water shown below is where women were drowned after being convicted of either incest or prostitution, depending on what account you read.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/drekkingarhylur-2000.jpg"><img alt="Drekkingarhylur" srcset="/2014-southern-iceland/drekkingarhylur-400.jpg, /2014-southern-iceland/drekkingarhylur-800.jpg 800w, /2014-southern-iceland/drekkingarhylur-1200.jpg 1200w, /2014-southern-iceland/drekkingarhylur-1600.jpg 1600w, /2014-southern-iceland/drekkingarhylur-2000.jpg 2000w" src="/2014-southern-iceland/drekkingarhylur-400.jpg"></a>
-</div>
+::: gallery
+drekkingarhylur | Drekkingarhylur
+:::
 
 ## Swimming
 
@@ -206,15 +206,15 @@ We drove back down part of the South coast this morning, arriving at the only do
 
 My favorite by far was Brutus, who at six years old is getting on, but he can, I was told, easily pull 250kg on his own. It was funny when <em>the musher</em> who pilotted the sled, noticed individual dogs slacking off, he would call them by name, and they would start pulling on the lines again.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/dog-sledding-2000.jpg"><img alt="Dog Sledding" srcset="/2014-southern-iceland/dog-sledding-400.jpg, /2014-southern-iceland/dog-sledding-800.jpg 800w, /2014-southern-iceland/dog-sledding-1200.jpg 1200w, /2014-southern-iceland/dog-sledding-1600.jpg 1600w, /2014-southern-iceland/dog-sledding-2000.jpg 2000w" src="/2014-southern-iceland/dog-sledding-400.jpg"></a>
-</div>
+::: gallery
+dog-sledding | Dog Sledding
+:::
 
 Just up the road from the dog sledding centre, was a lighthouse, the tallest structure in South Iceland, and of course past the lighthouse was a beach.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/beach-2000.jpg"><img alt="Beach" srcset="/2014-southern-iceland/beach-400.jpg, /2014-southern-iceland/beach-800.jpg 800w, /2014-southern-iceland/beach-1200.jpg 1200w, /2014-southern-iceland/beach-1600.jpg 1600w, /2014-southern-iceland/beach-2000.jpg 2000w" src="/2014-southern-iceland/beach-400.jpg"></a>
-</div>
+::: gallery
+beach | Beach
+:::
 
 All day we were teased by clear skys and sunny weather, however despite very little cloud, by eleven pm I was getting doubtful that I would be able to take any further photos of the aurora borealis. And by midnight I decided to bring the stuff back inside to warm up, ready to pack it back in the camera bag.
 
@@ -230,9 +230,9 @@ It's so relaxed, in the ten days we were in Iceland, we were only stuck in traff
 
 It's not actually too embarrassing using a GoPro <em>selfie pole</em> when you know you'll never see the people around you again.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/strokkur-geyser-2000.jpg"><img alt="Strokkur Geyser" srcset="/2014-southern-iceland/strokkur-geyser-400.jpg, /2014-southern-iceland/strokkur-geyser-800.jpg 800w, /2014-southern-iceland/strokkur-geyser-1200.jpg 1200w, /2014-southern-iceland/strokkur-geyser-1600.jpg 1600w, /2014-southern-iceland/strokkur-geyser-2000.jpg 2000w" src="/2014-southern-iceland/strokkur-geyser-400.jpg"></a>
-</div>
+::: gallery
+strokkur-geyser | Strokkur Geyser
+:::
 
 <h3>The Frustrating</h3>
 
@@ -240,9 +240,9 @@ I called the first blog post <a href="/iceland/mundane" title="Not a mundane eve
 
 Having reviewed the photos, learning how to set up the camera, and progressing my post processing skills over the week. I was really looking forward to capturing more photos of the aurora borealis. Alas, I'm planning a trip to Finland in early 2016 and I should be able to get some amazing photos then.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/aurora-borealis-2-2000.jpg"><img alt="Aurora Borealis 2" srcset="/2014-southern-iceland/aurora-borealis-2-400.jpg, /2014-southern-iceland/aurora-borealis-2-800.jpg 800w, /2014-southern-iceland/aurora-borealis-2-1200.jpg 1200w, /2014-southern-iceland/aurora-borealis-2-1600.jpg 1600w, /2014-southern-iceland/aurora-borealis-2-2000.jpg 2000w" src="/2014-southern-iceland/aurora-borealis-2-400.jpg"></a>
-</div>
+::: gallery
+aurora-borealis-2 | Aurora Borealis 2
+:::
 
 Unfortunately we rented a Ford Focus, and while it was a lovely modern car, having a 4x4 would be opened more opportunities for exploration.
 
@@ -252,9 +252,9 @@ It was really easy to buy a local Simmin sim card for my phone, however I did ge
 
 The group consensus is certainly that the <a href="/iceland/busy-day-of-epicness" title="Falljokull glacier">glacier walk</a> was the best activity all week. I would really like to do more of a glacier hike in the future.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/joel-falljokull-glacier-2000.jpg"><img alt="Joel Falljokull Glacier" srcset="/2014-southern-iceland/joel-falljokull-glacier-400.jpg, /2014-southern-iceland/joel-falljokull-glacier-800.jpg 800w, /2014-southern-iceland/joel-falljokull-glacier-1200.jpg 1200w, /2014-southern-iceland/joel-falljokull-glacier-1600.jpg 1600w, /2014-southern-iceland/joel-falljokull-glacier-2000.jpg 2000w" src="/2014-southern-iceland/joel-falljokull-glacier-400.jpg"></a>
-</div>
+::: gallery
+joel-falljokull-glacier | Joel Falljokull Glacier
+:::
 
 On the seventh day I could finally spell <em>Reykjavik</em> without having to look it up. I suppose that's something :P
 
@@ -264,14 +264,14 @@ The cabin we stayed in didn't have an oven, however it did have a barbecue, this
 
 I was all up for trying some whale, but the opportunity didn't arise.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/barbecue-2000.jpg"><img alt="Barbecue" srcset="/2014-southern-iceland/barbecue-400.jpg, /2014-southern-iceland/barbecue-800.jpg 800w, /2014-southern-iceland/barbecue-1200.jpg 1200w, /2014-southern-iceland/barbecue-1600.jpg 1600w, /2014-southern-iceland/barbecue-2000.jpg 2000w" src="/2014-southern-iceland/barbecue-400.jpg"></a>
-</div>
+::: gallery
+barbecue | Barbecue
+:::
 
 <h3>Goodbye</h3>
 
 I speak for all four of us when I say we've had a blast. I'm already planning a trip back to Iceland, renting a big 4x4 and camping different areas rather than retuning to Reykjavik each evening.
 
-<div class="gallery">
-    <a href="/2014-southern-iceland/night-cabin-2000.jpg"><img alt="Night Cabin" srcset="/2014-southern-iceland/night-cabin-400.jpg, /2014-southern-iceland/night-cabin-800.jpg 800w, /2014-southern-iceland/night-cabin-1200.jpg 1200w, /2014-southern-iceland/night-cabin-1600.jpg 1600w, /2014-southern-iceland/night-cabin-2000.jpg 2000w" src="/2014-southern-iceland/night-cabin-400.jpg"></a>
-</div>
+::: gallery
+night-cabin | Night Cabin
+:::

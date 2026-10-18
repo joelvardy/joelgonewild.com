@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
@@ -24,6 +25,9 @@ const siteUrl = 'https://www.joelgonewild.com';
 const siteDescription = 'I really enjoy exploring new places, so in 2014 I started writing down the things I had done both for others to read, and so future me can read too!';
 const imageSizes = [400, 800, 1200, 1600, 2000];
 const imageFormats = ['jpg', 'avif'] as const;
+const avifEffort = 4;
+const imageSettings = JSON.stringify({ imageSizes, imageFormats, avifEffort });
+const imageManifestPath = '.image-manifest.json';
 
 const { values: args } = parseArgs({
     options: {
@@ -107,42 +111,37 @@ const widthFractions = (ratios: number[], breaks: number[]) => {
 
 const vw = (fraction: number, bodyWidth: number) => Math.ceil(fraction * bodyWidth) + 'vw';
 
-const photoHtml = (slug: string, name: string, alt: string, { width, height }: Dimensions, sizes: string) => {
-    return `<a href="/${slug}/${name}-2000.jpg" style="--ratio: ${(width / height).toFixed(4)}"><picture>`
+const photoHtml = (slug: string, name: string, alt: string, href: string, { width, height }: Dimensions, sizes: string) => {
+    const external = /^https?:\/\//.test(href) ? ' rel="noopener noreferrer" target="_blank"' : '';
+    return `<a href="${markdown.utils.escapeHtml(href)}"${external} style="--ratio: ${(width / height).toFixed(4)}"><picture>`
         + `<source type="image/avif" srcset="${srcset(slug, name, 'avif')}" sizes="${sizes}">`
-        + `<img alt="${alt}" src="/${slug}/${name}-800.jpg" srcset="${srcset(slug, name, 'jpg')}" sizes="${sizes}" width="${width}" height="${height}" loading="lazy" decoding="async">`
+        + `<img alt="${markdown.utils.escapeHtml(alt)}" src="/${slug}/${name}-800.jpg" srcset="${srcset(slug, name, 'jpg')}" sizes="${sizes}" width="${width}" height="${height}" loading="lazy" decoding="async">`
         + '</picture></a>';
 };
 
-// Rebuilds each photo link written in the posts with responsive AVIF/JPEG markup, sized to its place in the gallery
-const renderPhotos = async (html: string, photosPath: string) => {
-    const photoPattern = /<a href="\/([^/"]+)\/([^/"]+)-2000\.jpg"><img alt="([^"]*)"[^>]*><\/a>/g;
-
-    const dimensions = new Map<string, Dimensions>();
-    for (const [, , name] of html.matchAll(photoPattern)) {
-        if (!dimensions.has(name)) {
-            dimensions.set(name, await photoDimensions(path.join(photosPath, name + '.jpg')));
-        }
-    }
-
-    const renderGallery = (gallery: string) => {
-        const photos = [...gallery.matchAll(photoPattern)];
-        const ratios = photos.map(([, , name]) => dimensions.get(name)!.width / dimensions.get(name)!.height);
+// Expands each `::: gallery` block of `name | alt | optional link` lines into responsive AVIF/JPEG markup, sized to its place in the gallery
+// The output has no blank lines so markdown-it passes it through as a single HTML block
+const renderPhotos = async (postMarkdown: string, slug: string, postPath: string) => {
+    let rendered = postMarkdown;
+    for (const [block, lines] of postMarkdown.matchAll(/^::: gallery\n([\s\S]*?)\n:::$/gm)) {
+        const photos = await Promise.all(lines.split('\n').map(async (line) => {
+            const [name, alt, link] = line.split('|').map((field) => field.trim());
+            const photoPath = path.join(postPath, 'photos', name + '.jpg');
+            if (!fs.existsSync(photoPath)) {
+                throw new Error(`${path.join(postPath, 'post.md')} references a missing photo: ${photoPath}`);
+            }
+            return { name, alt, href: link ?? `/${slug}/${name}-2000.jpg`, dimensions: await photoDimensions(photoPath) };
+        }));
+        const ratios = photos.map(({ dimensions }) => dimensions.width / dimensions.height);
         const desktop = widthFractions(ratios, ratios.length >= 5 ? [3] : []);
         const mobile = widthFractions(ratios, ratios.length >= 5 ? [2, 4] : [2]);
-        let index = 0;
-        return gallery.replace(photoPattern, (_, slug: string, name: string, alt: string) => {
+        const photoLines = photos.map(({ name, alt, href, dimensions }, index) => {
             const sizes = `(max-width: 600px) ${vw(mobile[index], 95)}, (max-width: 800px) ${vw(mobile[index], 80)}, ${vw(desktop[index], 70)}`;
-            index++;
-            return photoHtml(slug, name, alt, dimensions.get(name)!, sizes);
+            return '    ' + photoHtml(slug, name, alt, href, dimensions, sizes);
         });
-    };
-
-    return html
-        .replace(/<div class="gallery">[\s\S]*?<\/div>/g, renderGallery)
-        .replace(photoPattern, (_, slug: string, name: string, alt: string) => {
-            return photoHtml(slug, name, alt, dimensions.get(name)!, '(max-width: 600px) 95vw, (max-width: 800px) 80vw, 70vw');
-        });
+        rendered = rendered.replace(block, () => ['<div class="gallery">', ...photoLines, '</div>'].join('\n'));
+    }
+    return rendered;
 };
 
 // Posts start with a <!--moml:meta ... --> block of `Key: value` lines
@@ -162,35 +161,41 @@ const parsePost = (postMarkdownPath: string) => {
 
 const processPost = async (postPath: string): Promise<Post> => {
     const { meta, markdown: postMarkdown } = parsePost(path.join(postPath, 'post.md'));
+    const slug = makeSlug(meta.title);
     return {
-        slug: makeSlug(meta.title),
+        slug,
         title: meta.title,
         date: new Date(meta.date + 'T00:00:00Z'),
         hero: meta.hero,
         heroAlt: meta.heroalt ?? meta.title,
         intro: meta.intro,
-        html: await renderPhotos(markdown.render(postMarkdown), path.join(postPath, 'photos')),
+        html: markdown.render(await renderPhotos(postMarkdown, slug, postPath)),
     };
 };
 
-const processImage = async (imagePath: string, destinationPath: string, filename: string, imageSize: number, format: typeof imageFormats[number]) => {
-    const filePath = path.join(destinationPath, `${filename}-${imageSize}.${format}`);
-    if (fs.existsSync(filePath) && fs.statSync(filePath).mtimeMs >= fs.statSync(imagePath).mtimeMs) {
-        return;
-    }
+const processImage = async (imagePath: string, filePath: string, imageSize: number, format: typeof imageFormats[number]) => {
     const image = sharp(imagePath).autoOrient().resize(imageSize, imageSize, {
         fit: sharp.fit.inside,
         withoutEnlargement: true,
     });
-    await (format === 'avif' ? image.avif({ effort: 4 }) : image.jpeg()).toFile(filePath);
+    await (format === 'avif' ? image.avif({ effort: avifEffort }) : image.jpeg()).toFile(filePath);
 };
 
-const processImageSizes = (imagePath: string, destinationPath: string) => {
-    console.log('Processing image: ' + imagePath);
+// Hashes rather than mtimes decide what to regenerate, because a fresh CI checkout makes every photo look newer than its cached output
+const processImageSizes = async (imagePath: string, destinationPath: string, manifest: Record<string, string>) => {
     const filename = path.parse(imagePath).name;
-    return Promise.all(imageSizes.flatMap((imageSize) => {
-        return imageFormats.map((format) => processImage(imagePath, destinationPath, filename, imageSize, format));
-    }));
+    const outputs = imageSizes.flatMap((imageSize) => imageFormats.map((format) => ({
+        imageSize,
+        format,
+        filePath: path.join(destinationPath, `${filename}-${imageSize}.${format}`),
+    })));
+    const hash = createHash('sha1').update(fs.readFileSync(imagePath)).update(imageSettings).digest('hex');
+    if (manifest[imagePath] === hash && outputs.every(({ filePath }) => fs.existsSync(filePath))) {
+        return;
+    }
+    console.log('Processing image: ' + imagePath);
+    await Promise.all(outputs.map(({ imageSize, format, filePath }) => processImage(imagePath, filePath, imageSize, format)));
+    manifest[imagePath] = hash;
 };
 
 const generatePages = (posts: Post[], css: string) => {
@@ -232,6 +237,8 @@ const main = async () => {
         throw new Error('No post found at ' + args.post);
     }
 
+    const manifest: Record<string, string> = fs.existsSync(imageManifestPath) ? JSON.parse(fs.readFileSync(imageManifestPath, 'utf8')) : {};
+
     const posts: Post[] = [];
     for (const postPath of postPaths) {
         const post = await processPost(postPath);
@@ -240,12 +247,14 @@ const main = async () => {
 
         if (!args['no-photos'] && (selectedPostPath === undefined || selectedPostPath === postPath)) {
             for (const imagePath of imagesIn(path.join(postPath, 'photos'))) {
-                await processImageSizes(imagePath, publicPostPath);
+                await processImageSizes(imagePath, publicPostPath, manifest);
             }
         }
 
         posts.push(post);
     }
+
+    fs.writeFileSync(imageManifestPath, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
 
     posts.sort((a, b) => b.date.getTime() - a.date.getTime());
 
